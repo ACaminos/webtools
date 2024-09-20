@@ -1,6 +1,3 @@
-import { ChartPieIcon, CursorArrowRaysIcon, ChevronDownIcon, PhoneIcon, PlayCircleIcon, ComputerDesktopIcon, PhotoIcon, ArrowPathIcon, TableCellsIcon } from '@heroicons/react/20/solid'
-
-
 const tools = [
     {
         id : 1,

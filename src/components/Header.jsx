@@ -44,7 +44,6 @@ export default function Header() {
                 { tools.map( ( tool, index ) => (
                   <div key={ index } className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
                     <div className="flex h-10 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      {/* <tool.icon aria-hidden="true" className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" /> */}
                       <i className={tool.icon}></i>
                     </div>
                     <div className="flex-auto">
@@ -93,14 +92,14 @@ export default function Header() {
               <div className="space-y-2 py-6">
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                    Product
+                    Categorias
                     <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
                     { tools.map( ( tool, index ) => (
                     <div key={ index } className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
                         <div className="flex h-10 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <tool.icon aria-hidden="true" className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" />
+                          <i className={tool.icon}></i>
                         </div>
                         <div className="flex-auto">
                         <a href={"#"} className="block font-semibold text-gray-900">{ tool.category }<span className="absolute inset-0" /></a>
@@ -113,7 +112,7 @@ export default function Header() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Features
+                  Documentación
                 </a>
                 <a
                   href="#"
