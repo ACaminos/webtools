@@ -1,4 +1,5 @@
-import { ChartPieIcon, CursorArrowRaysIcon, ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { ChartPieIcon, CursorArrowRaysIcon, ChevronDownIcon, PhoneIcon, PlayCircleIcon, ComputerDesktopIcon, PhotoIcon, ArrowPathIcon, TableCellsIcon } from '@heroicons/react/20/solid'
+
 
 const tools = [
     {
@@ -51,7 +52,9 @@ const tools = [
                 description : "Libreria de iconos",
             },
         ],
-        icon : PlayCircleIcon
+        icon : "fa-solid fa-desktop",
+        update : '20/09/2024',
+        url : "#"
     },
     {
         id : 2,
@@ -78,7 +81,9 @@ const tools = [
                 description : "Banco de Imagenes gratuitas"
             }
         ],
-        icon : ChartPieIcon
+        icon : "fa-regular fa-images",
+        update : '20/09/2024',
+        url : "#"
     },
     {
         id : 3,
@@ -110,7 +115,9 @@ const tools = [
                 description : "Sintaxis de escritura y formato básicos"
             },
         ],
-        icon : CursorArrowRaysIcon
+        icon : "fa-solid fa-spinner",
+        update : '20/09/2024',
+        url : "#"
     },
     {
         id : 4,
@@ -147,7 +154,9 @@ const tools = [
                 description : "La forma más fácil de crear un README"
             }
         ],
-        icon : ChevronDownIcon
+        icon : "fa-brands fa-github",
+        update : '20/09/2024',
+        url : "#"
     },
     {
         id : 5,
@@ -184,7 +193,9 @@ const tools = [
                 description : "Crear API ficticias"
             }
         ],
-        icon : PhoneIcon
+        icon : "fa-solid fa-network-wired",
+        update : '20/09/2024',
+        url : "#"
     },
     {
         id : 6,
@@ -201,7 +212,9 @@ const tools = [
                 description : "Agregar controles de interacción avanzados a tus tablas HTML de forma fácil y gratuita"
             }
         ],
-        icon : ChartPieIcon
+        icon : "fa-solid fa-table-columns",
+        update : '20/09/2024',
+        url : "#"
     },
     {
         id : 7,
@@ -233,7 +246,9 @@ const tools = [
                 description : "Demo coreUi dark theme"
             },
         ],
-        icon : CursorArrowRaysIcon
+        icon : "fa-solid fa-table-list",
+        update : '20/09/2024',
+        url : "#"
     },
     {
         id : 8,
@@ -250,7 +265,9 @@ const tools = [
                 description : "Componente con tecnología SVG para crear fácilmente cargas de marcador de posición (como la carga de tarjetas de Facebook)."
             }
         ],
-        icon : PhoneIcon
+        icon : "fa-solid fa-bars-progress",
+        update : '20/09/2024',
+        url : "#"
     },
     {
         id : 9,
@@ -272,7 +289,9 @@ const tools = [
                 description : "Ejemplos sencillos de animación, gestos, componentes, transformaciones"
             },
         ],
-        icon : ChartPieIcon
+        icon : "fa-solid fa-table-cells-large",
+        update : '20/09/2024',
+        url : "#"
     },
     {
         id : 10,
@@ -289,7 +308,9 @@ const tools = [
                 description : "Formateador de código, embellecedor JSON, visor XML, conversores hexadecimales y más..."
             }
         ],
-        icon : PlayCircleIcon
+        icon : "fa-regular fa-file-code",
+        update : '20/09/2024',
+        url : "#"
     },
     {
         id : 11,
@@ -326,7 +347,9 @@ const tools = [
                 description : "Muestra notificaciones en tu aplicación fácil y rápido personalizable"
             }
         ],
-        icon : CursorArrowRaysIcon
+        icon : "fa-solid fa-person-running",
+        update : '20/09/2024',
+        url : "#"
     },
     {
         id : 12,
@@ -373,7 +396,38 @@ const tools = [
                 description : "Crea sitios web independientemente de tu experiencia en diseño."
             },
         ],
-        icon : PlayCircleIcon
+        icon : "fa-regular fa-bookmark",
+        update : '20/09/2024',
+        url : "#"
+    },
+    {
+        id : 14,
+        category : "Frameworks",
+        products : [
+            {
+                id : 1,
+                url : "https://tailwindcomponents.com/",
+                description : "Componentes y plantillas de interfaz de usuario de Tailwind de código abierto para ¡Inicie sus nuevas aplicaciones, proyectos o sitios de destino!"
+            },
+            {
+                id : 2,
+                url : "https://amp.dev/",
+                description : "AMP es un marco de componentes web para crear fácilmente experiencias de usuario para la web."
+            },
+            {
+                id : 3,
+                url : "https://www.material-tailwind.com/",
+                description : "Material Tailwind es una biblioteca de código abierto que utiliza el poder de Tailwind CSS y React para ayudarle a crear proyectos web únicos de forma más rápida y sencilla."
+            },
+            {
+                id : 4,
+                url : "https://astro.build/",
+                description : "Astro crea sitios de contenido rápidos, aplicaciones web potentes, API de servidor dinámico"
+            }
+        ],
+        icon : "fa-solid fa-code",
+        update : '20/09/2024',
+        url : "#"
     },
     {
         id : 13,
@@ -614,36 +668,21 @@ const tools = [
                 url : "https://htmlcolorcodes.com/es/",
                 description : "Obtener códigos de color HTML, códigos de color Hex, RGB"
             },
+            {
+                id : 48,
+                url : "https://tailblocks.cc/",
+                description : "Generador de componentes para Tailwind"
+            },
+            {
+                id : 49,
+                url : "https://freefrontend.com/",
+                description : "Una colección seleccionada de más de 10 000 fragmentos de código gratuitos"
+            },
         ],
-        icon : PlayCircleIcon
+        icon : "fa-solid fa-plus",
+        update : '20/09/2024',
+        url : "#"
     },
-    {
-        id : 14,
-        category : "Frameworks",
-        products : [
-            {
-                id : 1,
-                url : "https://tailwindcomponents.com/",
-                description : "Componentes y plantillas de interfaz de usuario de Tailwind de código abierto para ¡Inicie sus nuevas aplicaciones, proyectos o sitios de destino!"
-            },
-            {
-                id : 2,
-                url : "https://amp.dev/",
-                description : "AMP es un marco de componentes web para crear fácilmente experiencias de usuario para la web."
-            },
-            {
-                id : 3,
-                url : "https://www.material-tailwind.com/",
-                description : "Material Tailwind es una biblioteca de código abierto que utiliza el poder de Tailwind CSS y React para ayudarle a crear proyectos web únicos de forma más rápida y sencilla."
-            },
-            {
-                id : 4,
-                url : "https://astro.build/",
-                description : "Astro crea sitios de contenido rápidos, aplicaciones web potentes, API de servidor dinámico"
-            }
-        ],
-        icon : PlayCircleIcon
-    }
 ]
 
 export default tools
