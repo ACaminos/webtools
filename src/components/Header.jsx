@@ -20,11 +20,7 @@ export default function Header() {
           </a>
         </div>
         <div className="flex lg:hidden">
-          <button
-            type="button"
-            onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-          >
+          <button type="button" onClick={ () => setMobileMenuOpen( true ) } className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
             <span className="sr-only">Open main menu</span>
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
           </button>
@@ -36,10 +32,7 @@ export default function Header() {
               <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
             </PopoverButton>
 
-            <PopoverPanel
-              transition
-              className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
-            >
+            <PopoverPanel transition className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in">
               <div className="p-4">
                 { tools.map( ( tool, index ) => (
                   <div key={ index } className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
@@ -55,15 +48,9 @@ export default function Header() {
             </PopoverPanel>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
-            Documentación
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
-            Marketplace
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
-            Company
-          </a>
+          <a href="#" className="text-sm font-semibold leading-6 text-white">Documentación</a>
+          <a href="#" className="text-sm font-semibold leading-6 text-white">Marketplace</a>
+          <a href="#" className="text-sm font-semibold leading-6 text-white">Company</a>
         </PopoverGroup>
       </nav>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -72,17 +59,9 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
-              />
+              <img alt="" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" className="h-8 w-auto"/>
             </a>
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
-            >
+            <button type="button" onClick={ () => setMobileMenuOpen( false ) } className="-m-2.5 rounded-md p-2.5 text-gray-700">
               <span className="sr-only">Close menu</span>
               <XMarkIcon aria-hidden="true" className="h-6 w-6" />
             </button>
@@ -102,30 +81,14 @@ export default function Header() {
                           <i className={tool.icon}></i>
                         </div>
                         <div className="flex-auto">
-                        <a href={"#"} className="block font-semibold text-gray-900">{ tool.category }<span className="absolute inset-0" /></a>
+                          <a href={"#"} className="block font-semibold text-gray-900">{ tool.category }<span className="absolute inset-0" /></a>
                         </div>
                     </div>
                     ))}
                   </DisclosurePanel>
                 </Disclosure>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Documentación
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Marketplace
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Company
-                </a>
+                <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Documentación</a>
+                <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
               </div>
             </div>
           </div>

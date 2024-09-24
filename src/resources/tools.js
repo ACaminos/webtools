@@ -675,6 +675,11 @@ const tools = [
                 url : "https://freefrontend.com/",
                 description : "Una colección seleccionada de más de 10 000 fragmentos de código gratuitos"
             },
+            {
+                id : 50,
+                url : "https://www.seoptimer.com/meta-tag-generator",
+                description : "Un generador de meta tags para tu sitio web"
+            },
         ],
         icon : "fa-solid fa-plus",
         update : '20/09/2024',
