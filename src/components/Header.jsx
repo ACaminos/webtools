@@ -5,6 +5,7 @@ import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Pop
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import tools from '../resources/tools'
+import ToogleTheme from './toogleTheme'
 
 
 export default function Header() {
@@ -48,9 +49,11 @@ export default function Header() {
             </PopoverPanel>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-white">Documentación</a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">Marketplace</a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">Company</a>
+          {/* toogle */}
+          <ToogleTheme />
+
+          <a href="#" className="text-sm font-semibold leading-6 text-white"><i class="fa-brands fa-github fa-lg"></i></a>
+
         </PopoverGroup>
       </nav>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -87,8 +90,16 @@ export default function Header() {
                     ))}
                   </DisclosurePanel>
                 </Disclosure>
-                <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Documentación</a>
-                <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
+                <Disclosure as="div" className="-mx-3">
+                  <DisclosureButton className="group flex w-full items-center rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                    <span>Documentación <a href="#" className="text-sm font-semibold leading-6"><i class="fa-brands fa-github fa-lg"></i></a></span>
+                  </DisclosureButton>
+                </Disclosure>
+                <div style={{position:'absolute', bottom:10, right:10, display:'flex', justifyContent:'space-between'}}>
+                  {/* Toggle Theme */}
+                  <ToogleTheme />
+
+                </div>
               </div>
             </div>
           </div>
