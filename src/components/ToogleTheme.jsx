@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const ToogleTheme = () => {
+export const ToogleTheme = () => {
     const [ darkTheme, useDarkTheme ] = useState( false )
 
     const handleCheckboxChange = () => {
