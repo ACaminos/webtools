@@ -2,9 +2,9 @@ import { useState } from 'react'
 import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import tools from '../resources/tools'
-import ToogleTheme from './toogleTheme'
+import { ToogleTheme } from './toogleTheme'
 
+import tools from '../resources/tools'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
