@@ -52,7 +52,7 @@ export default function Header() {
           {/* toogle */}
           <ToogleTheme />
 
-          <a href="#" className="text-sm font-semibold leading-6 text-white"><i class="fa-brands fa-github fa-lg"></i></a>
+          <a href="#" className="text-sm font-semibold leading-6 text-white"><i className="fa-brands fa-github fa-lg"></i></a>
 
         </PopoverGroup>
       </nav>

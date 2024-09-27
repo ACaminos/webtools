@@ -1,15 +1,9 @@
-export const HorizontalCard = ( {category, update } ) => {
+export const HorizontalCard = ( { category, description, url, icon } = tools ) => {
   return (
-    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <li class="border-gray-400 flex flex-row mb-2">
-            <div class="select-none cursor-pointer bg-gray-200 rounded-md flex flex-1 items-center p-4  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
-                <div class="flex-1 pl-1 mr-16">
-                <div class="font-medium">{ category }</div>
-                <div class="text-gray-600 text-sm">{}</div>
-                </div>
-                <div class="text-gray-600 text-xs">Last Update : { update }</div>
-            </div>
-        </li>
-    </div>
+    <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-violet-700/70 hover:shadow-blue-500/10" href={ url }>
+      <i className={`${ icon } fa-xl`}></i>
+      <h2 className="mt-4 text-xl font-bold text-white">{ category }</h2>
+      <p className="mt-1 text-sm text-gray-300">{ description }</p>
+    </a>
   )
 }

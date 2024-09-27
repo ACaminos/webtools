@@ -2,6 +2,7 @@ const tools = [
     {
         id : 1,
         category : "iconos",
+        description : 'Explora nuestra colección de páginas web con iconos para todos los gustos.',
         products : [
             {
                 id : 1,
@@ -56,6 +57,7 @@ const tools = [
     {
         id : 2,
         category : "Banco de Imagenes",
+        description : 'Explora nuestra colección de bancos de imágenes. Encontrarás fotos, ilustraciones y vectores de alta calidad para todos tus proyectos creativos.',
         products : [
             {
                 id : 1,
@@ -85,6 +87,7 @@ const tools = [
     {
         id : 3,
         category : "Spinners",
+        description : '¡Dale vida a tus cargas! Explora nuestra colección de spinners y elige el que mejor se adapte a tu diseño.',
         products : [
             {
                 id : 1,
@@ -119,6 +122,7 @@ const tools = [
     {
         id : 4,
         category : "GitHub",
+        description : 'Nuestra sección de proyectos GitHub te ofrece una amplia colección de repositorios.',
         products : [
             {
                 id : 1,
@@ -158,6 +162,7 @@ const tools = [
     {
         id : 5,
         category : "Apis",
+        description : 'Encuentra la API perfecta para tus necesidades.',
         products : [
             {
                 id : 1,
@@ -197,6 +202,7 @@ const tools = [
     {
         id : 6,
         category : "DataTables",
+        description : 'Encuentra todo lo que necesitas para trabajar con DataTables.',
         products : [
             {
                 id : 1,
@@ -216,6 +222,7 @@ const tools = [
     {
         id : 7,
         category : "Dashboards",
+        description : 'Descubre una amplia gama de dashboards para presentar tus datos de manera clara e intuitiva.',
         products : [
             {
                 id : 1,
@@ -250,6 +257,7 @@ const tools = [
     {
         id : 8,
         category : "Skeleton",
+        description : 'Explora diseños de esqueletos para mejorar la experiencia del usuario.',
         products : [
             {
                 id : 1,
@@ -269,6 +277,7 @@ const tools = [
     {
         id : 9,
         category : "Divisores secciones web",
+        description : 'Explora una variedad de divisores para separar tus secciones.',
         products : [
             {
                 id : 1,
@@ -293,6 +302,7 @@ const tools = [
     {
         id : 10,
         category : "Json",
+        description : 'Encuentra todo lo que necesitas saber sobre JSON.',
         products : [
             {
                 id : 1,
@@ -312,6 +322,7 @@ const tools = [
     {
         id : 11,
         category : "Animaciones",
+        description : 'Explora nuestra colección y descubre cómo las animaciones pueden mejorar la experiencia del usuario en tu sitio web o aplicación.',
         products : [
             {
                 id : 1,
@@ -351,6 +362,7 @@ const tools = [
     {
         id : 12,
         category : "Librerias",
+        description : 'Aprovecha las ventajas de las librerias y reduce el tiempo de desarrollo.',
         products : [
             {
                 id : 1,
@@ -398,8 +410,9 @@ const tools = [
         url : "#"
     },
     {
-        id : 14,
+        id : 13,
         category : "Frameworks",
+        description : 'Explora una variedad de frameworks para desarrollo web.',
         products : [
             {
                 id : 1,
@@ -427,8 +440,9 @@ const tools = [
         url : "#"
     },
     {
-        id : 13,
+        id : 14,
         category : "others",
+        description : 'Descubre una gran cantidad de sitios web útiles y relevantes.',
         products : [
             {
                 id : 1,
