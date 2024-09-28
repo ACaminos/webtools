@@ -1,12 +1,18 @@
 import { useState } from 'react'
+
+//React Router Dom
+import { Link } from 'react-router-dom'
+
+//Icons
 import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { ToogleTheme } from '../components/ToogleTheme'
 
+// Components
 import tools from '../resources/tools'
 
-export default function Header() {
+export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -14,8 +20,8 @@ export default function Header() {
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only text-white">Your Company</span>
-            <img alt="" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" className="h-8 w-auto" />
+            <span className="sr-only text-white">WebTools</span>
+            <img alt="" src="/public/webTools.png" className='h-8'/>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -50,7 +56,7 @@ export default function Header() {
           {/* toogle */}
           <ToogleTheme />
 
-          <a href="#" className="text-sm font-semibold leading-6 text-white"><i className="fa-brands fa-github fa-lg"></i></a>
+          <Link to={"https://github.com/ACaminos/webtools"} className="text-sm font-semibold leading-6 text-white"><i className="fa-brands fa-github fa-lg"></i></Link>
 
         </PopoverGroup>
       </nav>
@@ -90,7 +96,7 @@ export default function Header() {
                 </Disclosure>
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                    <span>Documentación <a href="#" className="text-sm font-semibold leading-6"><i class="fa-brands fa-github fa-lg"></i></a></span>
+                    <span>Documentación <Link to={"https://github.com/ACaminos/webtools"} className="text-sm font-semibold leading-6"><i class="fa-brands fa-github fa-lg"></i></Link></span>
                   </DisclosureButton>
                 </Disclosure>
                 <div style={{position:'absolute', bottom:10, right:10, display:'flex', justifyContent:'space-between'}}>

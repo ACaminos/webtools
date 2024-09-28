@@ -1,18 +1,28 @@
+// React Router Dom
+import { Route, Routes } from "react-router-dom";
+
+// Styles
 import './App.css'
-import Banner from './components/Banner'
-import { Cards } from './components/Cards'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Hero from './components/Hero'
+
+// Components
+import { Footer } from './components/Footer'
+import { Header } from './components/Header'
+
+// Pages
+import { Error404 } from './pages/Error404'
+import { Layout } from './pages/Layout'
 
 function App() {
 
   return (
     <>
       <Header/>
-      {/* <Banner/> */}
-      <Hero/>
-      <Cards/>
+
+      <Routes>
+        <Route path='/' element={ <Layout/> }/>
+        <Route path="*" element={<Error404 />} />
+      </Routes>
+
       <Footer/>
     </>
   )
