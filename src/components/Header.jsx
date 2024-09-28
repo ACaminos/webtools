@@ -21,7 +21,7 @@ export const Header = () => {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only text-white">WebTools</span>
-            <img alt="" src="/public/webTools.png" className='h-8'/>
+            <img alt="" src="/webTools.png" className='h-8'/>
           </a>
         </div>
         <div className="flex lg:hidden">
