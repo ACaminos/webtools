@@ -43,5 +43,5 @@ Después de instalar las dependencias, puedes iniciar el servidor de desarrollo 
 Esto iniciará el proyecto en modo desarrollo y podrás verlo en tu navegador en http://localhost:3000.
 ## Contribuciones
 
-Si conoces herramientas que no están en la lista, siéntete libre de hacer un pull request
+Si conoces herramientas que no están en la lista, siéntete libre de hacer un request
 
