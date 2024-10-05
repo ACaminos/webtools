@@ -11,6 +11,7 @@ import { Header } from './components/Header'
 // Pages
 import { Error404 } from './pages/Error404'
 import { Layout } from './pages/Layout'
+import { Category } from "./pages/Category";
 
 function App() {
 
@@ -19,8 +20,9 @@ function App() {
       <Header/>
 
       <Routes>
-        <Route path='/' element={ <Layout/> }/>
-        <Route path="*" element={<Error404 />} />
+        <Route path='/' element={ <Layout/> } />
+        <Route path="/category/:category" element={ <Category/> } />
+        <Route path="*" element={ <Error404 /> } />
       </Routes>
 
       <Footer/>
