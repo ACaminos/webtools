@@ -439,6 +439,72 @@ const tools = [
                 url : "https://nextui.org/",
                 description : "Crea sitios web independientemente de tu experiencia en diseño."
             },
+            {
+                id : 9,
+                name : "Material UI",
+                url : "https://mui.com/",
+                description : "MUI ofrece un conjunto completo de herramientas de interfaz de usuario gratuitas para ayudarlo a implementar nuevas funciones más rápido."
+            },
+            {
+                id : 10,
+                name : "Ant Design",
+                url : "https://ant.design/",
+                description : "Un lenguaje de diseño de UI de clase empresarial y una biblioteca React UI con un conjunto de componentes React de alta calidad, una de las mejores bibliotecas React UI para empresas."
+            },
+            {
+                id : 11,
+                name : "React Bootstrap",
+                url : "https://react-bootstrap.netlify.app/",
+                description : "El framework de front-end más popular, rediseñado para React."
+            },
+            {
+                id : 12,
+                name : "Chakra UI",
+                url : "https://v2.chakra-ui.com/",
+                description : "Chakra UI es una biblioteca de componentes simple, modular y accesible que le brinda los elementos básicos que necesita para crear sus aplicaciones React."
+            },
+            {
+                id : 13,
+                name : "Mantine",
+                url : "https://mantine.dev/",
+                description : "Cree aplicaciones web accesibles y totalmente funcionales más rápido que nunca: Mantine incluye más de 100 componentes personalizables y 50 hooks para cubrirlo en cualquier situación."
+            },
+            {
+                id : 14,
+                name : "Shadcn",
+                url : "https://ui.shadcn.com/",
+                description : "Componentes bellamente diseñados que puedes copiar y pegar en tus aplicaciones."
+            },
+            {
+                id : 15,
+                name : "Blueprint",
+                url : "https://blueprintjs.com/",
+                description : "Un conjunto de herramientas de interfaz de usuario basado en React para la web"
+            },
+            {
+                id : 16,
+                name : "Prime React",
+                url : "https://primereact.org/",
+                description : "Mejore sus aplicaciones web con el conjunto integral de componentes de interfaz de usuario personalizables y repletos de funciones de PrimeReact."
+            },
+            {
+                id : 17,
+                name : "Next UI",
+                url : "https://nextui.org/",
+                description : "Cree sitios web/aplicaciones hermosos, modernos y rápidos sin importar su experiencia en diseño."
+            },
+            {
+                id : 18,
+                name : "Radix UI",
+                url : "https://www.radix-ui.com/",
+                description : "Una biblioteca de componentes de código abierto optimizada para un desarrollo rápido, un mantenimiento sencillo y una accesibilidad"
+            },
+            {
+                id : 19,
+                name : "React Spectrum Libraries",
+                url : "https://react-spectrum.adobe.com/",
+                description : "Una colección de bibliotecas y herramientas que le ayudan a crear experiencias de usuario adaptables, accesibles y sólidas."
+            },
         ],
         icon : "fa-regular fa-bookmark",
         update : '20/09/2024',
@@ -471,7 +537,19 @@ const tools = [
                 name : "astro",
                 url : "https://astro.build/",
                 description : "Astro crea sitios de contenido rápidos, aplicaciones web potentes, API de servidor dinámico"
-            }
+            },
+            {
+                id : 5,
+                name : "Evergreen",
+                url : "https://evergreen.segment.com/",
+                description : "Evergreen es un marco de interfaz de usuario de React para crear productos ambiciosos en la web."
+            },
+            {
+                id : 5,
+                name : "Elastic UI",
+                url : "https://eui.elastic.co/#/",
+                description : "The Elastic UI framework (EUI) es una biblioteca de diseño que se utiliza en Elastic para crear productos internos que deben compartir nuestra estética. Distribuye componentes de interfaz de usuario de React y recursos estáticos para su uso en la creación de diseños web."
+            },
         ],
         icon : "fa-solid fa-code",
         update : '20/09/2024',
