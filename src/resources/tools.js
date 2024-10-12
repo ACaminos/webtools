@@ -219,7 +219,13 @@ const tools = [
                 name : "sand api",
                 url : "https://sandapi.com/",
                 description : "Crear API ficticias"
-            }
+            },
+            {
+                id : 7,
+                name : "Open Meteo",
+                url : "https://open-meteo.com/",
+                description : "Open-Meteo es una API meteorológica de código abierto y ofrece acceso gratuito para uso no comercial. No se requiere clave API."
+            },
         ],
         icon : "fa-solid fa-network-wired",
         update : '20/09/2024',

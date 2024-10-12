@@ -1,12 +1,12 @@
 // Components
 import { StatsIcons } from '../components/StatsIcons'
 import { Cards } from '../components/Cards'
-import { Hero } from '../components/Hero'
+import { MainHero } from '../components/MainHero'
 
 export const Layout = () => {
   return (
     <>
-        <Hero />
+        <MainHero />
         <StatsIcons/>
         <Cards/>
     </>

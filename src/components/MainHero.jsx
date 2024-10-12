@@ -1,4 +1,4 @@
-export const Hero = () => {
+export const MainHero = () => {
   return (
     <section className="dark:bg-dark-100 dark:text-gray-800">
       <div className="container mx-auto flex flex-col items-center px-4 pt-32 text-center md:px-10 lg:px-32 xl:max-w-3xl">
