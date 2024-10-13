@@ -5,11 +5,12 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
 
 // Component
+import { Error404 } from "./Error404";
 import { GridCards } from "../components/GridCards";
+import { Breadcrumb } from "../components/Breadcrumb";
 
 // Data
 import tools from "../resources/tools";
-import { Error404 } from "./Error404";
 
 export const Category = () => {
     const { category } = useParams();
@@ -23,6 +24,7 @@ export const Category = () => {
 
   return (
     <>
+        <Breadcrumb category={ category }/>
         { page ? ( <GridCards { ...page } /> ) :  <Error404/> }
     </>
   )

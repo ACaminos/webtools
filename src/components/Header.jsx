@@ -17,7 +17,7 @@ export const Header = () => {
 
   return (
     <header>
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between py-6 px-6 xl:px-0">
         <div className="flex lg:flex-1">
           <Link to={'/'} className="-m-1.5 p-1.5">
             <span className="sr-only text-white">WebTools</span>

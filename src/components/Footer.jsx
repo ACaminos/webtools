@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const Footer = () => {
   return (
     <footer className="bg-dark" style={{borderTop:'1px solid gray'}}>

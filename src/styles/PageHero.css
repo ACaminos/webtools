@@ -1,0 +1,32 @@
+
+  .heroSection {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20rem;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  h1.title {
+    color: white;
+    text-align: center;
+    font-size: 2.1rem;
+    text-shadow: .1rem .2rem gray;
+    box-shadow: 0 0 .5rem black;
+    background: rgba(40, 40, 40, .6);
+    padding: .5ch 2ch;
+    margin-bottom: 2ch;
+  }
+  /* Without removing the border sizing as seen in CSS resets, create a border-image, then give it a slice value of 1 to fully surround the content*/
+  .overlay {
+  /*   border-image-source: linear-gradient(gray, black); */
+    border-image-source: linear-gradient(
+      rgba(70, 70, 70, .55), /* gray */
+      rgba(10, 10, 10, .55) /*black */
+    );
+  /*   border-image-source: linear-gradient( gray, black ); */
+  /*   border-image-slice: 1; */
+  /* fill in the empty space inside to cover the entire container   */
+    border-image-slice: fill 1;
+  /* Use a transparent gradient or border image to make a see-through overlay   */
+  }
