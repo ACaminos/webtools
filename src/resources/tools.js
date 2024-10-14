@@ -871,6 +871,12 @@ const tools = [
                 url : "https://omatsuri.app/",
                 description : "Herramientas de navegador de código abierto para uso diario"
             },
+            {
+                id : 52,
+                name : "Auto Animate",
+                url : "https://auto-animate.formkit.com/",
+                description : "Añade movimiento a tus aplicaciones con una sola línea de código."
+            },
         ],
         icon : "fa-solid fa-plus",
         update : '20/09/2024',
