@@ -511,6 +511,12 @@ const tools = [
                 url : "https://react-spectrum.adobe.com/",
                 description : "Una colección de bibliotecas y herramientas que le ayudan a crear experiencias de usuario adaptables, accesibles y sólidas."
             },
+            {
+                id : 20,
+                name : "ReactJs",
+                url : "https://react.dev/",
+                description : "La biblioteca para interfaces de usuario nativas y web"
+            },
         ],
         icon : "fa-regular fa-bookmark",
         update : '20/09/2024',
@@ -555,6 +561,30 @@ const tools = [
                 name : "Elastic UI",
                 url : "https://eui.elastic.co/#/",
                 description : "The Elastic UI framework (EUI) es una biblioteca de diseño que se utiliza en Elastic para crear productos internos que deben compartir nuestra estética. Distribuye componentes de interfaz de usuario de React y recursos estáticos para su uso en la creación de diseños web."
+            },
+            {
+                id : 6,
+                name : "Vue JS",
+                url : "https://vuejs.org/",
+                description : "El marco progresivo de JavaScript Un marco accesible, eficaz y versátil para crear interfaces de usuario web."
+            },
+            {
+                id : 7,
+                name : "Svelte",
+                url : "https://svelte.dev/",
+                description : "Aplicaciones web mejoradas cibernéticamente"
+            },
+            {
+                id : 8,
+                name : "Svelte",
+                url : "https://www.solidjs.com/",
+                description : "Reactividad simple y eficaz para construir interfaces de usuario."
+            },
+            {
+                id : 9,
+                name : "Next JS",
+                url : "https://nextjs.org/",
+                description : "El marco React para la Web. Next.js, te permite crear aplicaciones web de alta calidad con el poder de los componentes React."
             },
         ],
         icon : "fa-solid fa-code",
