@@ -7,35 +7,41 @@ const tools = [
             {
                 id : 1,
                 name : "Flaticon",
+                preview : "https://www.flaticon.com/media/share/flaticon-generic.jpg",
                 url : "https://www.flaticon.com/",
                 description : "Multiples Iconos",
             },
             {
                 id : 2,
                 name : "Iconbuddy",
+                preview : "https://c1.tablecdn.com/iconbuddy/banner-og.png",
                 url : "https://iconbuddy.app/",
                 description : "Multiples Iconos",
             },
             {
                 id : 3,
                 name : "Animated Icons",
+                preview : "https://animatedicons.co/og-image-3.png",
                 url : "https://animatedicons.co/",
                 description : "Íconos animados de alta calidad",
             },
             {
                 id : 4,
                 name : "Yesicon",
+                preview : "https://yesicon.app/card.png",
                 url : "https://yesicon.app/",
                 description : "Conjuntos de Iconos de Código Abierto y Gratis",
             },
             {
                 id : 5,
                 name : "Geist",
+                preview : "https://assets.vercel.com/image/upload/v1709494095/front/design/geist-og.jpg",
                 url : "https://vercel.com/geist/icons",
                 description : "Una colección de íconos utilizados en los productos Vercel",
             },
             {
                 id : 6,
+                preview : "/notImage.png",
                 name : "Icones",
                 url : "https://icones.js.org/",
                 description : "El buscador más grande de ICONOS para tu proyecto",
@@ -43,18 +49,21 @@ const tools = [
             {
                 id : 7,
                 name : "Unicornicons",
+                preview : "https://unicornicons.com/og.jpg",
                 url : "https://unicornicons.com/",
                 description : "Más de 100 divertidos íconos animados. Personaliza colores, ancho de trazo, fondo y escala. Disponible en formato JSON y SVG.",
             },
             {
                 id : 8,
                 name : "svgrepo",
+                preview : "https://www.svgrepo.com/social.png",
                 url : "https://www.svgrepo.com/",
                 description : "Más de 500.000 iconos y vectores SVG con licencia abierta",
             },
             {
                 id : 9,
                 name : "iconoir",
+                preview : "https://iconoir.com/iconoir-brand.png",
                 url : "https://iconoir.com/",
                 description : "Libreria de iconos",
             },
@@ -70,24 +79,28 @@ const tools = [
             {
                 id : 1,
                 name : "stockvault",
+                preview : "https://www.stockvault.net/templates/default/images/logo_square.png",
                 url : "https://www.stockvault.net/",
                 description : "Banco de Imagenes gratuitas"
             },
             {
                 id : 2,
                 name : "pixabay",
+                preview : "/notImage.png",
                 url : "https://pixabay.com/es/",
                 description : "Banco de Imagenes gratuitas"
             },
             {
                 id : 3,
                 name : "unsplash",
+                preview : "https://images.unsplash.com/opengraph/1x1.png?mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-w=64&mark-align=top%2Cleft&mark-pad=50&h=630&w=1200&blend=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1726711340699-952d47133b21%3Fcrop%3Dfaces%252Cedges%26h%3D630%26w%3D1200%26blend%3D000000%26blend-mode%3Dnormal%26blend-alpha%3D10%26mark-w%3D424%26mark-align%3Dmiddle%252Ccenter%26mark%3Dhttps%253A%252F%252Fimages.unsplash.com%252Fopengraph%252Fwordmark.png%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixid%3DM3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI5MjIwNDY2fA%26ixlib%3Drb-4.0.3&blend-w=1&auto=format&fit=crop&q=60",
                 url : "https://unsplash.com/",
                 description : "Banco de Imagenes gratuitas"
             },
             {
                 id : 4,
                 name : "pexels",
+                preview : "https://www.pexels.com/assets/static/images/meta/pexels-stock-photos.jpg",
                 url : "https://www.pexels.com/es-es/",
                 description : "Banco de Imagenes gratuitas"
             }
@@ -102,31 +115,36 @@ const tools = [
         products : [
             {
                 id : 1,
-                name : "",
+                name : "spinkit",
+                preview : "https://tobiasahlin.com/static/-social/og_spinkit.jpg",
                 url : "https://tobiasahlin.com/spinkit/",
                 description : "Spinners"
             },
             {
                 id : 2,
                 name : "react loader spinner",
+                preview : "/notImageGithub.png",
                 url : "https://mhnpd.github.io/react-loader-spinner/",
                 description : "React Spinners"
             },
             {
                 id : 3,
                 name : "css loaders",
+                preview : "https://cssloaders.github.io/images/Loader-screen.png",
                 url : "https://cssloaders.github.io/",
                 description : "Spinners"
             },
             {
                 id : 4,
                 name : "whirl",
+                preview : "/notImage.png",
                 url : "https://whirl.netlify.app/",
                 description : "Spinners"
             },
             {
                 id : 5,
                 name : "Sintaxis de escritura y formato básicos",
+                preview : "/notImageGithub.png",
                 url : "https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax",
                 description : "Sintaxis de escritura y formato básicos"
             },
@@ -142,36 +160,42 @@ const tools = [
             {
                 id : 1,
                 name : "xaviers gist",
+                preview : "/notImageGithub.png",
                 url : "https://gist.github.com/rxaviers/7360908",
                 description : "Lista completa de marcas de emoji de github"
             },
             {
                 id : 2,
                 name : "badges for github",
+                preview : "/notImageGithub.png",
                 url : "https://dev.to/envoy_/150-badges-for-github-pnk",
                 description : "Lista completa de badges para github"
             },
             {
                 id : 3,
                 name : "shields",
+                preview : "/notImageGithub.png",
                 url : "https://shields.io/",
                 description : "Lista completa de badges para github"
             },
             {
                 id : 4,
                 name : "react insta stories",
+                preview : "/notImageGithub.png",
                 url : "https://github.com/mohitk05/react-insta-stories#react-insta-stories",
                 description : "Un componente de React para historias similares a Instagram"
             },
             {
                 id : 5,
                 name : "readme typing",
+                preview : "/notImageGithub.png",
                 url : "https://readme-typing-svg.herokuapp.com/demo/",
                 description : "Generador de texto animado para readme de Github"
             },
             {
                 id : 6,
                 name : "readme.so",
+                preview : "https://readme.so/readme.png",
                 url : "https://readme.so/es/editor",
                 description : "La forma más fácil de crear un README"
             }
@@ -187,42 +211,49 @@ const tools = [
             {
                 id : 1,
                 name : "rapidapi",
+                preview : "/notImage.png",
                 url : "https://rapidapi.com/hub",
                 description : "Multiples apis para consumir y practicar"
             },
             {
                 id : 2,
                 name : "json data ai",
+                preview : "https://www.jsondataai.com/opengraph-image.png?a3d80ae6749bdebd",
                 url : "https://www.jsondataai.com/",
                 description : "Cree endpoints de API generados por IA"
             },
             {
                 id : 3,
                 name : "media stack",
+                preview : "/notImage.png",
                 url : "https://mediastack.com/",
                 description : "API REST sencilla y gratuita para Noticias en vivo y artículos de blogs"
             },
             {
                 id : 4,
                 name : "fake store api",
+                preview : "/notImage.png",
                 url : "https://fakestoreapi.com/",
                 description : "API REST de tienda falsa para su prototipo de sitio web de compras o comercio electrónico"
             },
             {
                 id : 5,
                 name : "random user",
+                preview : "",
                 url : "https://randomuser.me/",
                 description : "Una API gratuita y de código abierto para generar datos de usuario aleatorios"
             },
             {
                 id : 6,
                 name : "sand api",
+                preview : "",
                 url : "https://sandapi.com/",
                 description : "Crear API ficticias"
             },
             {
                 id : 7,
                 name : "Open Meteo",
+                preview : "",
                 url : "https://open-meteo.com/",
                 description : "Open-Meteo es una API meteorológica de código abierto y ofrece acceso gratuito para uso no comercial. No se requiere clave API."
             },

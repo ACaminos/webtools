@@ -2,12 +2,12 @@
 import { Link } from "react-router-dom"
 
 export const DataCard = ( product ) => {
-    const { name, description, url } = product
+    const { name, description, url, preview } = product
   return (
         <>
             <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-xs dark:bg-gray-800 dark:border-gray-700">
                 <Link to={ url } target="_blank">
-                    <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt=""/>
+                    <img class="rounded-t-lg" src={ preview } alt=""/>
                 </Link>
                 <div class="p-5">
                     <Link to={ url }>
