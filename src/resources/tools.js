@@ -907,6 +907,12 @@ const tools = [
                 url : "https://auto-animate.formkit.com/",
                 description : "Añade movimiento a tus aplicaciones con una sola línea de código."
             },
+            {
+                id : 53,
+                name : "Origin UI",
+                url : "https://originui.com/",
+                description : "OriginUI es una amplia colección de componentes que se copian y pegan para crear rápidamente interfaces de usuario para aplicaciones. Es gratuito, de código abierto y está listo para incorporarse a sus proyectos."
+            },
         ],
         icon : "fa-solid fa-plus",
         update : '20/09/2024',
