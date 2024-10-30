@@ -944,6 +944,12 @@ const tools = [
                 url : "https://originui.com/",
                 description : "OriginUI es una amplia colección de componentes que se copian y pegan para crear rápidamente interfaces de usuario para aplicaciones. Es gratuito, de código abierto y está listo para incorporarse a sus proyectos."
             },
+            {
+                id : 54,
+                name : "UI Faces",
+                url : "https://uifaces.co/",
+                description : "Una biblioteca en crecimiento de avatares gratuitos, generados por IA y de alta resolución para maquetas de diseño, cuidadosamente seleccionados para satisfacer todas tus necesidades creativas"
+            },
         ],
         icon : "fa-solid fa-plus",
         update : '20/09/2024',
