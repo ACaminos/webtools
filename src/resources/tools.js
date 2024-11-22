@@ -204,8 +204,15 @@ const tools = [
                 name : "Templates Github Profile",
                 preview : "/notImageGithub.png",
                 url : "https://github.com/durgeshsamariya/awesome-github-profile-readme-templates/tree/master",
-                description : "Templates de perfiles para Github"
-            }
+                description : "Templates de perfiles para Github I"
+            },
+            {
+                id : 7,
+                name : "Templates Github Profile",
+                preview : "/notImageGithub.png",
+                url : "https://github.com/iuricode/readme-template/tree/main",
+                description : "Templates de perfiles para Github II"
+            },
         ],
         icon : "fa-brands fa-github",
         update : '20/09/2024',
