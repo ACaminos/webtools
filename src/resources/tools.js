@@ -1045,6 +1045,13 @@ const tools = [
                 url : "https://uifaces.co/",
                 description : "Una biblioteca en crecimiento de avatares gratuitos, generados por IA y de alta resolución para maquetas de diseño, cuidadosamente seleccionados para satisfacer todas tus necesidades creativas"
             },
+            {
+                id : 55,
+                name : "Mocky",
+                preview : "https://designer.mocky.io/assets/mocky-social-twitter-final.png",
+                url : "https://designer.mocky.io/",
+                description : "No espere a que el backend esté listo, genere respuestas API personalizadas con Mocky y comience a trabajar en su aplicación de inmediato."
+            },
         ],
         icon : "fa-solid fa-plus",
         update : '20/09/2024',
