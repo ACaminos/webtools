@@ -198,6 +198,13 @@ const tools = [
                 preview : "https://readme.so/readme.png",
                 url : "https://readme.so/es/editor",
                 description : "La forma más fácil de crear un README"
+            },
+            {
+                id : 7,
+                name : "Templates Github Profile",
+                preview : "/notImageGithub.png",
+                url : "https://github.com/durgeshsamariya/awesome-github-profile-readme-templates/tree/master",
+                description : "Templates de perfiles para Github"
             }
         ],
         icon : "fa-brands fa-github",
