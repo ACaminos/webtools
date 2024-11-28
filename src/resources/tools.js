@@ -593,6 +593,13 @@ const tools = [
                 url : "https://react.dev/",
                 description : "La biblioteca para interfaces de usuario nativas y web"
             },
+            {
+                id : 21,
+                name : "Drag and Drop",
+                preview : "https://drag-and-drop.formkit.com/og.png",
+                url : "https://drag-and-drop.formkit.com/",
+                description : "Drag and Drop de FormKit es una pequeña libreria para agregar funcionalidad de arrastrar y soltar a su aplicación."
+            },
         ],
         icon : "fa-regular fa-bookmark",
         update : '20/09/2024',
