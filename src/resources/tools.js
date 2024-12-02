@@ -1073,6 +1073,13 @@ const tools = [
                 url : "https://designer.mocky.io/",
                 description : "No espere a que el backend esté listo, genere respuestas API personalizadas con Mocky y comience a trabajar en su aplicación de inmediato."
             },
+            {
+                id : 56,
+                name : "OnlyOffice",
+                preview : "https://download.onlyoffice.com/assets/fb/fb_icon_325x325.jpg",
+                url : "https://www.onlyoffice.com/es/",
+                description : "OnlyOffice ofrece una suite ofimática en línea segura y compatible con los formatos de MS Office. Conéctalo a tu plataforma web para la edición de documentos y la colaboración o utilízalo como parte de OnlyOffice Workspace."
+            },
         ],
         icon : "fa-solid fa-plus",
         update : '20/09/2024',
