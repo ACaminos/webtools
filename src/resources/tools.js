@@ -1080,6 +1080,13 @@ const tools = [
                 url : "https://www.onlyoffice.com/es/",
                 description : "OnlyOffice ofrece una suite ofimática en línea segura y compatible con los formatos de MS Office. Conéctalo a tu plataforma web para la edición de documentos y la colaboración o utilízalo como parte de OnlyOffice Workspace."
             },
+            {
+                id : 57,
+                name : "PureCode AI",
+                preview : "/notImage.png",
+                url : "https://purecode.ai/",
+                description : "Genere, itere y exporte componentes, códigos y diseños de UI listos para producción."
+            },
         ],
         icon : "fa-solid fa-plus",
         update : '20/09/2024',
