@@ -1087,6 +1087,13 @@ const tools = [
                 url : "https://purecode.ai/",
                 description : "Genere, itere y exporte componentes, códigos y diseños de UI listos para producción."
             },
+            {
+                id : 58,
+                name : "colorsandfonts",
+                preview : "https://www.colorsandfonts.com/openGraph/twitter.png",
+                url : "https://www.colorsandfonts.com/",
+                description : "Explore Colors & Fonts, su recurso de referencia para herramientas de color y tipografía diseñadas para desarrolladores web y diseñadores digitales."
+            },
         ],
         icon : "fa-solid fa-plus",
         update : '20/09/2024',
