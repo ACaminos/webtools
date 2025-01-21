@@ -264,6 +264,34 @@ const tools = [
                 url : "https://open-meteo.com/",
                 description : "Open-Meteo es una API meteorológica de código abierto y ofrece acceso gratuito para uso no comercial. No se requiere clave API."
             },
+            {
+                id : 7,
+                name : "Dragon Ball",
+                preview : "/notImage.png",
+                url : "https://web.dragonball-api.com/",
+                description : "The Dragon Ball API"
+            },
+            {
+                id : 8,
+                name : "The Open Movie API",
+                preview : "/notImage.png",
+                url : "https://www.omdbapi.com/",
+                description : "La API de OMDb es un servicio web RESTful para obtener información de películas"
+            },
+            {
+                id : 9,
+                name : "Restful Booker",
+                preview : "/notImage.png",
+                url : "https://restful-booker.herokuapp.com/",
+                description : "Un área de juegos de API creada por Mark Winteringham para aquellos que quieran aprender más sobre las pruebas y herramientas de API."
+            },
+            {
+                id : 10,
+                name : "Joke Api",
+                preview : "/notImage.png",
+                url : "https://v2.jokeapi.dev/",
+                description : "JokeAPI es una API REST que sirve chistes de manera uniforme y bien formateada."
+            },
         ],
         icon : "fa-solid fa-network-wired",
         update : '20/09/2024',
