@@ -1122,6 +1122,13 @@ const tools = [
                 url : "https://www.colorsandfonts.com/",
                 description : "Explore Colors & Fonts, su recurso de referencia para herramientas de color y tipografía diseñadas para desarrolladores web y diseñadores digitales."
             },
+            {
+                id : 59,
+                name : "Database Build",
+                preview : "https://database-build-g501prf35-supabase.vercel.app/opengraph-image.png?b55f41893ce22bc8",
+                url : "https://database.build/",
+                description : "Construye tu base de datos con la ayuda de la IA"
+            },
         ],
         icon : "fa-solid fa-plus",
         update : '20/09/2024',
