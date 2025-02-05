@@ -41,8 +41,8 @@ const tools = [
             },
             {
                 id : 6,
-                preview : "/notImage.png",
                 name : "Icones",
+                preview : "/notImage.png",
                 url : "https://icones.js.org/",
                 description : "El buscador más grande de ICONOS para tu proyecto",
             },
@@ -66,6 +66,13 @@ const tools = [
                 preview : "https://iconoir.com/iconoir-brand.png",
                 url : "https://iconoir.com/",
                 description : "Libreria de iconos",
+            },
+            {
+                id : 10,
+                name : "Svgl",
+                preview : "https://svgl.app/images/screenshot.png",
+                url : "https://svgl.app/",
+                description : "Una hermosa biblioteca con logotipos SVG",
             },
         ],
         icon : "fa-solid fa-desktop",
