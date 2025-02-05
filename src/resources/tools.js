@@ -100,7 +100,7 @@ const tools = [
             {
                 id : 3,
                 name : "unsplash",
-                preview : "https://images.unsplash.com/opengraph/1x1.png?mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-w=64&mark-align=top%2Cleft&mark-pad=50&h=630&w=1200&blend=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1726711340699-952d47133b21%3Fcrop%3Dfaces%252Cedges%26h%3D630%26w%3D1200%26blend%3D000000%26blend-mode%3Dnormal%26blend-alpha%3D10%26mark-w%3D424%26mark-align%3Dmiddle%252Ccenter%26mark%3Dhttps%253A%252F%252Fimages.unsplash.com%252Fopengraph%252Fwordmark.png%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixid%3DM3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI5MjIwNDY2fA%26ixlib%3Drb-4.0.3&blend-w=1&auto=format&fit=crop&q=60",
+                preview : "https://images.unsplash.com/opengraph/1x1.png?mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-w=64&mark-align=top%2Cleft&mark-pad=50&h=630&w=1200&blend=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1737044280473-06976eb5fda5%3Fcrop%3Dfaces%252Cedges%26h%3D630%26w%3D1200%26blend%3D000000%26blend-mode%3Dnormal%26blend-alpha%3D10%26mark-w%3D424%26mark-align%3Dmiddle%252Ccenter%26mark%3Dhttps%253A%252F%252Fimages.unsplash.com%252Fopengraph%252Fwordmark.png%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixid%3DM3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzM4NzI0NTM0fA%26ixlib%3Drb-4.0.3&blend-w=1&auto=format&fit=crop&q=60",
                 url : "https://unsplash.com/",
                 description : "Banco de Imagenes gratuitas"
             },
@@ -398,13 +398,6 @@ const tools = [
                 url : "https://wweb.dev/resources/css-separator-generator",
                 description : "Divisores de secciones de formas personalizadas"
             },
-            {
-                id : 3,
-                name : "framer",
-                preview : "https://www.framer.com/images/social/api.png",
-                url : "https://www.framer.com/motion/examples/",
-                description : "Ejemplos sencillos de animación, gestos, componentes, transformaciones"
-            },
         ],
         icon : "fa-solid fa-table-cells-large",
         update : '20/09/2024',
@@ -424,7 +417,7 @@ const tools = [
             {
                 id : 2,
                 name : "code beautify",
-                preview : "https://codebeautify.org/img/cb/rem-to-px-converter.png",
+                preview : "https://codebeautify.org/img/cb/logo.png",
                 url : "https://codebeautify.org/rem-to-px-converter",
                 description : "Formateador de código, embellecedor JSON, visor XML, conversores hexadecimales y más..."
             }
