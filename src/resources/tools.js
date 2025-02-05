@@ -617,7 +617,7 @@ const tools = [
             {
                 id : 19,
                 name : "React Spectrum Libraries",
-                preview : "https://react-spectrum.adobe.com/ReactSpectrumHome_976x445_2x.9a42e0fd.png",
+                preview : "/notImage.png",
                 url : "https://react-spectrum.adobe.com/",
                 description : "Una colección de bibliotecas y herramientas que le ayudan a crear experiencias de usuario adaptables, accesibles y sólidas."
             },
@@ -1041,7 +1041,7 @@ const tools = [
             {
                 id : 46,
                 name : "directus",
-                preview : "https://directus.io/__og-image__/image/og.png",
+                preview : "https://directus.io/__og-image__/static/og.png",
                 url : "https://directus.io/",
                 description : "El backend para construir cualquier cosa o todo. Combinando la utilidad de un CMS sin headless con el poder de un backend como servicio. Maneja API, autenticacion, administrar y otros."
             },
