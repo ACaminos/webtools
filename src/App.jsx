@@ -13,6 +13,10 @@ import { Layout } from './pages/Layout'
 import { Error404 } from './pages/Error404'
 import { Category } from './pages/Category';
 
+//Speed Insights & Analitycs from Vercel
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
+
 function App() {
 
   return (
@@ -26,6 +30,8 @@ function App() {
       </Routes>
 
       <Footer/>
+      <SpeedInsights/>
+      <Analytics/>
     </>
   )
 }
