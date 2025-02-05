@@ -1,47 +1,40 @@
+# Webtools
 
-# WebTools
+This is a project developed with **ReactJS, Vite, React Router DOM and Font Awesome** that allows sharing different types of tools and resources for developers.
 
-Es una colección de sitios web y herramientas esenciales para desarrolladores. Este repositorio está pensado para ayudar a otros desarrolladores a encontrar rápidamente recursos útiles que mejoren su flujo de trabajo, desde la escritura de código hasta el diseño de interfaces.
+## 🚀 Technologies used
 
+- [ReactJS](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [React Router DOM](https://reactrouter.com/)
+- [Font Awesome](https://fontawesome.com/)
 
-## Instalación
+## 📌 Main Features
 
-### Requisitos Previos
+- Share useful tools and resources for developers.
+- Browse tool categories by use.
+- Modern and responsive design with optimized styles.
+- Smooth navigation using React Router DOM.
+- Attractive icons with Font Awesome.
 
-Asegúrate de tener instalado lo siguiente:
+## 📂 Installation and Execution
 
-- Node.js 20.x o superior: Puedes descargar la última versión de Node.js desde nodejs.org.
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/ACaminos/webtools.git
+```
 
-Verifica la versión de Node.js ejecutando el siguiente comando en tu terminal:
+### 2️⃣ Access the project directory:
+```bash
+cd webtools
+```
 
-    node -v
+### 3️⃣ Install dependencies
+```bash
+npm install
+```
 
-Debe devolver una versión igual o superior a v20.0.0.
-
-### Clonar el Repositorio
-
-Primero, clona este repositorio en tu máquina local:
-
-    git clone https://github.com/usuario/webdev-toolbox.git
-
-Luego, accede a la carpeta del proyecto:
-
-    cd webdev-toolbox
-
-### Instalar Dependencias
-
-Una vez dentro de la carpeta del proyecto, instala todas las dependencias necesarias ejecutando:
-
-    npm install
-
-### Ejecutar el Proyecto
-
-Después de instalar las dependencias, puedes iniciar el servidor de desarrollo con el siguiente comando:
-
-    npm run dev
-
-Esto iniciará el proyecto en modo desarrollo y podrás verlo en tu navegador en http://localhost:3000.
-## Contribuciones
-
-Si conoces herramientas que no están en la lista, siéntete libre de hacer un request
-
+### 4️⃣ Run the development server
+```bash
+npm run dev
+```
