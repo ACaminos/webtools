@@ -329,7 +329,7 @@ const tools = [
     {
         id : 7,
         category : "Dashboards",
-        description : 'Descubre una amplia gama de dashboards para presentar tus datos de manera clara e intuitiva.',
+        description : 'Descubre una amplia gama de dashboards y componentes para presentar tus datos de manera clara e intuitiva.',
         products : [
             {
                 id : 1,
@@ -352,6 +352,14 @@ const tools = [
                 url : "https://coreui.io/demos/react/4.6/dark/#/dashboard",
                 description : "Demo coreUi dark theme"
             },
+            {
+                id : 4,
+                name : "Rosen Charts",
+                preview : "/notImage.png",
+                url : "https://rosencharts.com/",
+                description : "Rosencharts es una colección de hermosos gráficos para React"
+            },
+            
         ],
         icon : "fa-solid fa-table-list",
         update : '20/09/2024',
