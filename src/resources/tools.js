@@ -359,6 +359,13 @@ const tools = [
                 url : "https://rosencharts.com/",
                 description : "Rosencharts es una colección de hermosos gráficos para React"
             },
+            {
+                id : 5,
+                name : "Pocketbase",
+                preview : "https://pocketbase.io/images/og.png",
+                url : "https://pocketbase.io/",
+                description : "Open Source Backend en 1 archivo con base de datos en tiempo real, autenticación, almacenamiento de archivos y panel de administración"
+            },
             
         ],
         icon : "fa-solid fa-table-list",
@@ -1136,6 +1143,13 @@ const tools = [
                 preview : "https://database-build-g501prf35-supabase.vercel.app/opengraph-image.png?b55f41893ce22bc8",
                 url : "https://database.build/",
                 description : "Construye tu base de datos con la ayuda de la IA"
+            },
+            {
+                id : 60,
+                name : "React DayPicker",
+                preview : "https://daypicker.dev/img/social-card.png",
+                url : "https://daypicker.dev/",
+                description : "DayPicker es un componente React para crear selectores de fechas, calendarios y entradas de fechas para aplicaciones web."
             },
         ],
         icon : "fa-solid fa-plus",
