@@ -1151,6 +1151,13 @@ const tools = [
                 url : "https://daypicker.dev/",
                 description : "DayPicker es un componente React para crear selectores de fechas, calendarios y entradas de fechas para aplicaciones web."
             },
+            {
+                id : 61,
+                name : "Laws of UX",
+                preview : "https://lawsofux.com/es/home/social.es.png",
+                url : "https://lawsofux.com/es/",
+                description : "Laws of UX es una colección de mejores prácticas que los diseñadores pueden considerar al crear interfaces de usuario."
+            },
         ],
         icon : "fa-solid fa-plus",
         update : '20/09/2024',
