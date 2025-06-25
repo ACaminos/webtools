@@ -100,14 +100,14 @@ const tools = [
             {
                 id : 3,
                 name : "unsplash",
-                preview : "https://images.unsplash.com/opengraph/1x1.png?mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-w=64&mark-align=top%2Cleft&mark-pad=50&h=630&w=1200&blend=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1737044280473-06976eb5fda5%3Fcrop%3Dfaces%252Cedges%26h%3D630%26w%3D1200%26blend%3D000000%26blend-mode%3Dnormal%26blend-alpha%3D10%26mark-w%3D424%26mark-align%3Dmiddle%252Ccenter%26mark%3Dhttps%253A%252F%252Fimages.unsplash.com%252Fopengraph%252Fwordmark.png%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixid%3DM3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzM4NzI0NTM0fA%26ixlib%3Drb-4.0.3&blend-w=1&auto=format&fit=crop&q=60",
+                preview : "https://images.unsplash.com/opengraph/1x1.png?mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-w=64&mark-align=top%2Cleft&mark-pad=50&h=630&w=1200&blend=https%3A%2F%2Fplus.unsplash.com%2Fpremium_photo-1750672731068-c0eff14565bd%3Fcrop%3Dfaces%252Cedges%26h%3D630%26w%3D1200%26blend%3D000000%26blend-mode%3Dnormal%26blend-alpha%3D10%26mark-w%3D424%26mark-align%3Dmiddle%252Ccenter%26mark%3Dhttps%253A%252F%252Fimages.unsplash.com%252Fopengraph%252Fwordmark.png%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixid%3DM3wxMjA3fDB8MXxhbGx8MXx8fHx8fHx8MTc1MDg2MTg4N3w%26ixlib%3Drb-4.1.0&blend-w=1&auto=format&fit=crop&q=60",
                 url : "https://unsplash.com/",
                 description : "Banco de Imagenes gratuitas"
             },
             {
                 id : 4,
                 name : "pexels",
-                preview : "https://www.pexels.com/assets/static/images/meta/pexels-stock-photos.jpg",
+                preview : "https://static.pexels.com/1/images/meta/pexels-stock-photos.jpg",
                 url : "https://www.pexels.com/es-es/",
                 description : "Banco de Imagenes gratuitas"
             }
@@ -439,7 +439,7 @@ const tools = [
             {
                 id : 2,
                 name : "code beautify",
-                preview : "https://codebeautify.org/img/cb/logo.png",
+                preview : "https://codebeautify.org/img/cb/rem-to-px-converter.png",
                 url : "https://codebeautify.org/rem-to-px-converter",
                 description : "Formateador de código, embellecedor JSON, visor XML, conversores hexadecimales y más..."
             }
@@ -597,7 +597,7 @@ const tools = [
             {
                 id : 14,
                 name : "Shadcn",
-                preview : "https://ui.shadcn.com/og.jpg",
+                preview : "https://ui.shadcn.com/og?title=Build%20your%20Component%20Library&description=A%20set%20of%20beautifully-designed%2C%20accessible%20components%20and%20a%20code%20distribution%20platform.%20Works%20with%20your%20favorite%20frameworks.%20Open%20Source.%20Open%20Code.",
                 url : "https://ui.shadcn.com/",
                 description : "Componentes bellamente diseñados que puedes copiar y pegar en tus aplicaciones."
             },
@@ -1084,7 +1084,7 @@ const tools = [
             {
                 id : 49,
                 name : "freefrontend",
-                preview : "https://freefrontend.com/apple-touch-icon.png",
+                preview : "https://freefrontend.com/logo.png",
                 url : "https://freefrontend.com/",
                 description : "Una colección seleccionada de más de 10 000 fragmentos de código gratuitos"
             },
@@ -1123,13 +1123,13 @@ const tools = [
                 url : "https://uifaces.co/",
                 description : "Una biblioteca en crecimiento de avatares gratuitos, generados por IA y de alta resolución para maquetas de diseño, cuidadosamente seleccionados para satisfacer todas tus necesidades creativas"
             },
-            {
-                id : 55,
-                name : "Mocky",
-                preview : "https://designer.mocky.io/assets/mocky-social-twitter-final.png",
-                url : "https://designer.mocky.io/",
-                description : "No espere a que el backend esté listo, genere respuestas API personalizadas con Mocky y comience a trabajar en su aplicación de inmediato."
-            },
+            // {
+            //     id : 55,
+            //     name : "Mocky",
+            //     preview : "https://designer.mocky.io/assets/mocky-social-twitter-final.png",
+            //     url : "https://designer.mocky.io/",
+            //     description : "No espere a que el backend esté listo, genere respuestas API personalizadas con Mocky y comience a trabajar en su aplicación de inmediato."
+            // },
             {
                 id : 56,
                 name : "OnlyOffice",
