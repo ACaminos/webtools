@@ -366,6 +366,13 @@ const tools = [
                 url : "https://pocketbase.io/",
                 description : "Open Source Backend en 1 archivo con base de datos en tiempo real, autenticación, almacenamiento de archivos y panel de administración"
             },
+            {
+                id : 6,
+                name : "Tabler",
+                preview : "https://tabler.io/opengraph-image-pwu6ef.png?11625b095b6adeee",
+                url : "https://tabler.io/admin-template",
+                description : "Tabler es una plantilla de administración HTML gratuita con componentes y funciones de excelente diseño."
+            },
             
         ],
         icon : "fa-solid fa-table-list",
@@ -642,6 +649,13 @@ const tools = [
                 preview : "https://drag-and-drop.formkit.com/og.png",
                 url : "https://drag-and-drop.formkit.com/",
                 description : "Drag and Drop de FormKit es una pequeña libreria para agregar funcionalidad de arrastrar y soltar a su aplicación."
+            },
+            {
+                id : 22,
+                name : "daisyUI",
+                preview : "https://img.daisyui.com/images/default.webp",
+                url : "https://daisyui.com/",
+                description : "La mejor biblioteca de componentes de Tailwind: componentes de interfaz de usuario gratuitos para Tailwind CSS"
             },
         ],
         icon : "fa-regular fa-bookmark",
