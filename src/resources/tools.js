@@ -1172,6 +1172,13 @@ const tools = [
                 url : "https://lawsofux.com/es/",
                 description : "Laws of UX es una colección de mejores prácticas que los diseñadores pueden considerar al crear interfaces de usuario."
             },
+            {
+                id : 62,
+                name : "Pattern Craft",
+                preview : "https://patterncraft.fun/banner.png",
+                url : "https://patterncraft.fun/",
+                description : "Explora una colección de patrones de fondo y degradados artesanales para sitios web modernos. Fáciles de usar y personalizar."
+            },
         ],
         icon : "fa-solid fa-plus",
         update : '20/09/2024',
