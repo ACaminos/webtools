@@ -773,6 +773,20 @@ const tools = [
                 url : "https://linusorii-deepsite-v2.hf.space/projects/new",
                 description : "DeepSite es una herramienta de desarrollo web que lo ayuda a construir sitios web con IA, no se requiere código. Implementemos su sitio web con profundos y disfrutemos de la magia de la IA."
             },
+            {
+                id : 5,
+                name : "Mocha AI",
+                preview : "https://mocha-cdn.com/og.png",
+                url : "https://getmocha.com/",
+                description : "Mocha es un constructor de aplicaciones sin código de AI que convierte su idea en un sitio web en vivo en minutos. No se necesitan habilidades de codificación, perfectas para empresarios ambiciosos."
+            },
+            {
+                id : 6,
+                name : "Stitch - Design with AI",
+                preview : "https://app-companion-430619.appspot.com/static/og.png",
+                url : "https://stitch.withgoogle.com/",
+                description : "Stitch genera UI para aplicaciones móviles y web, lo que hace que la ideación del diseño sea rápida y fácil."
+            },
         ],
         icon : "fab fa-figma",
         update : '28/07/2025',
