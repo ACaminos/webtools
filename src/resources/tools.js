@@ -742,6 +742,43 @@ const tools = [
     },
     {
         id : 14,
+        category : "Generadores de UI´s basados en AI",
+        description : 'Explora una variedad de Generadores de UI con IA para desarrollo web.',
+        products : [
+            {
+                id : 1,
+                name : "V0",
+                preview : "https://v0.dev/assets/icon.svg",
+                url : "https://v0.dev/",
+                description : "Diseñá interfaces con palabras. Entra a v0.dev y transformá tus ideas en código React listo para usar."
+            },
+            {
+                id : 2,
+                name : "Lovable",
+                preview : "https://lovable.dev/opengraph-image.png?e7ae4aa2faea9aea",
+                url : "https://lovable.dev/",
+                description : "Cree productos de software, utilizando solo una interfaz de chat"
+            },
+            {
+                id : 3,
+                name : "bolt",
+                preview : "https://bolt.new/static/social_preview_index.jpg",
+                url : "https://bolt.new/",
+                description : "Aplicar, ejecutar, editar y publicar aplicaciones"
+            },
+            {
+                id : 4,
+                name : "DeepSite",
+                preview : "https://deepsite.hf.co/banner.png",
+                url : "https://linusorii-deepsite-v2.hf.space/projects/new",
+                description : "DeepSite es una herramienta de desarrollo web que lo ayuda a construir sitios web con IA, no se requiere código. Implementemos su sitio web con profundos y disfrutemos de la magia de la IA."
+            },
+        ],
+        icon : "fab fa-figma",
+        update : '28/07/2025',
+    },
+    {
+        id : 15,
         category : "others",
         description : 'Descubre una gran cantidad de sitios web útiles y relevantes.',
         products : [
@@ -1182,43 +1219,6 @@ const tools = [
         ],
         icon : "fa-solid fa-plus",
         update : '20/09/2024',
-    },
-    {
-        id : 13,
-        category : "Generadores de UI´s basados en AI",
-        description : 'Explora una variedad de Generadores de UI con IA para desarrollo web.',
-        products : [
-            {
-                id : 1,
-                name : "V0",
-                preview : "https://v0.dev/assets/icon.svg",
-                url : "https://v0.dev/",
-                description : "Diseñá interfaces con palabras. Entra a v0.dev y transformá tus ideas en código React listo para usar."
-            },
-            {
-                id : 2,
-                name : "Lovable",
-                preview : "https://lovable.dev/opengraph-image.png?e7ae4aa2faea9aea",
-                url : "https://lovable.dev/",
-                description : "Cree productos de software, utilizando solo una interfaz de chat"
-            },
-            {
-                id : 3,
-                name : "bolt",
-                preview : "https://bolt.new/static/social_preview_index.jpg",
-                url : "https://bolt.new/",
-                description : "Aplicar, ejecutar, editar y publicar aplicaciones"
-            },
-            {
-                id : 4,
-                name : "DeepSite",
-                preview : "https://deepsite.hf.co/banner.png",
-                url : "https://linusorii-deepsite-v2.hf.space/projects/new",
-                description : "DeepSite es una herramienta de desarrollo web que lo ayuda a construir sitios web con IA, no se requiere código. Implementemos su sitio web con profundos y disfrutemos de la magia de la IA."
-            },
-        ],
-        icon : "fa-solid fa-code",
-        update : '28/07/2025',
     },
 ]
 
