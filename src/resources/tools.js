@@ -742,6 +742,43 @@ const tools = [
     },
     {
         id : 14,
+        category : "Deployment & Hosting",
+        description : 'Explora una variedad de Generadores de UI con IA para desarrollo web.',
+        products : [
+            {
+                id : 1,
+                name : "Render",
+                preview : "https://cdn.sanity.io/images/hvk0tap5/production/cb7ff287cdf28d8115569e91e856e9b6441bc7a6-3840x2146.png?w=1600&fit=max&auto=format",
+                url : "https://render.com/",
+                description : "Cree, implemente y escale sus aplicaciones con una facilidad incomparable, desde su primer usuario hasta el billonésimo"
+            },
+            {
+                id : 2,
+                name : "Railway",
+                preview : "https://railway.app/og.png?v=2",
+                url : "https://railway.com/",
+                description : "Railway simplifica su pila de infraestructura, desde los servidores hasta la observabilidad, con una plataforma única, escalable y fácil de usar."
+            },
+            {
+                id : 3,
+                name : "Vercel",
+                preview : "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/4JmubmYDJnFtstwHbaZPev/0c3576832aae5b1a4d98c8c9f98863c3/Vercel_Home_OG.png",
+                url : "https://vercel.com/",
+                description : "Vercel proporciona las herramientas de desarrollo y la infraestructura en la nube para crear, escalar y proteger una web más rápida y personalizada."
+            },
+            {
+                id : 4,
+                name : "Netlify",
+                preview : "https://cdn.sanity.io/images/o0o2tn5x/marketing/19d95d00d7f79b8b4340dc6ca183ac5456f1a095-1200x630.png",
+                url : "https://www.netlify.com/",
+                description : "Implementa cualquier interfaz de usuario moderna, desde sitios de marketing hasta aplicaciones de IA."
+            },
+        ],
+        icon : "fas fa-server",
+        update : '28/07/2025',
+    },
+    {
+        id : 15,
         category : "Generadores de UI´s basados en AI",
         description : 'Explora una variedad de Generadores de UI con IA para desarrollo web.',
         products : [
@@ -792,7 +829,7 @@ const tools = [
         update : '28/07/2025',
     },
     {
-        id : 15,
+        id : 16,
         category : "others",
         description : 'Descubre una gran cantidad de sitios web útiles y relevantes.',
         products : [
