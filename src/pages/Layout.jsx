@@ -6,9 +6,9 @@ import { StatsIcons } from '../components/StatsIcons'
 export const Layout = () => {
   return (
     <>
-        <MainHero />
-        <StatsIcons/>
-        <Cards/>
+      <MainHero />
+      <StatsIcons/>
+      <Cards/>
     </>
   )
 }

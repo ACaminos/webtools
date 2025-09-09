@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export const Error404 = () => {
   return (
     <section className="flex items-center h-full p-48 dark:bg-dark dark:text-gray-800">
@@ -8,7 +10,7 @@ export const Error404 = () => {
                 </h2>
                 <p className="text-white text-2xl font-semibold md:text-3xl">Sorry, we couldn't find this page.</p>
                 <p className="mt-4 mb-8 dark:text-gray-200">But dont worry, you can find plenty of other things on our homepage.</p>
-                <a rel="noopener noreferrer" href="#" className="px-8 py-3 font-semibold rounded dark:bg-rose-600 dark:text-gray-50">Back to homepage</a>
+                <Link rel="noopener noreferrer" to="/" className="px-8 py-3 font-semibold rounded dark:bg-rose-600 dark:text-gray-50">Back to homepage</Link>
             </div>
         </div>
     </section>
