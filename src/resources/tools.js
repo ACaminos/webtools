@@ -657,6 +657,13 @@ const tools = [
                 url : "https://daisyui.com/",
                 description : "La mejor biblioteca de componentes de Tailwind: componentes de interfaz de usuario gratuitos para Tailwind CSS"
             },
+            {
+                id : 23,
+                name : "Sonner",
+                preview : "https://sonner.emilkowal.ski/opengraph-image.png?d5e368c2f1b9b507",
+                url : "https://sonner.emilkowal.ski/",
+                description : "Una libreria de toasts para React."
+            },
         ],
         icon : "fa-regular fa-bookmark",
         update : '20/09/2024',
