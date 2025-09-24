@@ -663,6 +663,12 @@ const tools = [
                 preview : "https://sonner.emilkowal.ski/opengraph-image.png?d5e368c2f1b9b507",
                 url : "https://sonner.emilkowal.ski/",
                 description : "Una libreria de toasts para React."
+            },            {
+                id : 24,
+                name : "HTML Docs",
+                preview : "https://htmldocs.com/og-image.png",
+                url : "https://htmldocs.com/",
+                description : "Cree facturas, informes y contratos dinámicos con tecnologías web modernas. Diseñe una vez con JSX y genere miles de archivos PDF con solo pasar propiedades."
             },
         ],
         icon : "fa-regular fa-bookmark",
