@@ -1276,7 +1276,7 @@ const tools = [
             {
                 id : 62,
                 name : "Pattern Craft",
-                preview : "https://patterncraft.fun/banner.png",
+                preview : "https://patterncraft.fun/og-banner.png",
                 url : "https://patterncraft.fun/",
                 description : "Explora una colección de patrones de fondo y degradados artesanales para sitios web modernos. Fáciles de usar y personalizar."
             },
