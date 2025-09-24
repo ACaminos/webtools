@@ -1280,6 +1280,13 @@ const tools = [
                 url : "https://patterncraft.fun/",
                 description : "Explora una colección de patrones de fondo y degradados artesanales para sitios web modernos. Fáciles de usar y personalizar."
             },
+            {
+                id : 63,
+                name : "BillionMail",
+                preview : "/notImage.png",
+                url : "https://www.billionmail.com/",
+                description : "Una solución de código abierto para servidores de correo, boletines informativos y marketing por correo electrónico"
+            },
         ],
         icon : "fa-solid fa-plus",
         update : '20/09/2024',
