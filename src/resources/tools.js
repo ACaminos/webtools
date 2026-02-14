@@ -442,6 +442,13 @@ const tools = [
                 preview : "https://codebeautify.org/img/cb/rem-to-px-converter.png",
                 url : "https://codebeautify.org/rem-to-px-converter",
                 description : "Formateador de código, embellecedor JSON, visor XML, conversores hexadecimales y más..."
+            },
+            {
+                id : 3,
+                name : "jsoning",
+                preview : "/notImage.png",
+                url : "https://jsoning.com/formatter/",
+                description : "Herramientas para formatear, validar, convertir y manipular JSON fácilmente."
             }
         ],
         icon : "fa-regular fa-file-code",
