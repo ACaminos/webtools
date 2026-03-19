@@ -676,6 +676,57 @@ const tools = [
     },
     {
         id : 13,
+        category : "IA",
+        description : 'Explora una variedad de generadores de IA para desarrollo web.',
+        products : [
+            {
+                id : 1,
+                name : "Stitch - Google",
+                preview : "https://app-companion-430619.appspot.com/static/og.png",
+                url : "https://stitch.withgoogle.com/",
+                description : "Transforma ideas en diseños de UI para aplicaciones móviles y web"
+            },
+            {
+                id : 2,
+                name : "Claude AI",
+                preview : "https://claude.ai/images/claude_ogimage.png",
+                url : "https://claude.ai/login",
+                description : "Piensa rápido, construye mas rápido"
+            },
+            {
+                id : 3,
+                name : "Deepseek",
+                preview : "https://cdn.deepseek.com/images/deepseek-chat-open-graph-image.jpeg",
+                url : "https://www.deepseek.com/en/",
+                description : "DeepSeek, desentraña el misterio de la AGI con curiosidad. Responde la pregunta esencial con una visión a largo plazo."
+            },
+            {
+                id : 4,
+                name : "ChatGPT",
+                preview : "https://cdn.openai.com/chatgpt/share-og.png",
+                url : "https://chatgpt.com/",
+                description : "ChatGPT es una IA de conversación que puede responder a preguntas, proporcionar información y realizar tareas de manera autónoma."
+            },
+            {
+                id : 5,
+                name : "Gemini - Google",
+                preview : "https://www.gstatic.com/lamda/images/gemini_aurora_thumbnail_4g_e74822ff0ca4259beb718.png",
+                url : "https://gemini.google.com/app",
+                description : "Descubre Gemini, el asistente de IA de Google. Puedes pedirle que te ayude a escribir, a hacer planes o a explorar ideas, entre otras cosas. Aprovecha el potencial de la IA generativa."
+            },
+            {
+                id : 6,
+                name : "Dyad",
+                preview : "https://www.dyad.sh/icon.png?0bd63cb71c42928a",
+                url : "https://www.dyad.sh/",
+                description : "Flexible, local & open-source AI app builder"
+            },
+        ],
+        icon : "fa-solid fa-robot",
+        update : '19/03/2026',
+    },
+    {
+        id : 14,
         category : "Frameworks",
         description : 'Explora una variedad de frameworks para desarrollo web.',
         products : [
@@ -754,7 +805,7 @@ const tools = [
         update : '20/09/2024',
     },
     {
-        id : 14,
+        id : 15,
         category : "Deployment & Hosting",
         description : 'Explora una variedad de Generadores de UI con IA para desarrollo web.',
         products : [
@@ -791,7 +842,7 @@ const tools = [
         update : '28/07/2025',
     },
     {
-        id : 15,
+        id : 16,
         category : "Generadores de UI´s basados en AI",
         description : 'Explora una variedad de Generadores de UI con IA para desarrollo web.',
         products : [
@@ -842,7 +893,7 @@ const tools = [
         update : '28/07/2025',
     },
     {
-        id : 16,
+        id : 17,
         category : "others",
         description : 'Descubre una gran cantidad de sitios web útiles y relevantes.',
         products : [
@@ -1224,13 +1275,6 @@ const tools = [
                 url : "https://uifaces.co/",
                 description : "Una biblioteca en crecimiento de avatares gratuitos, generados por IA y de alta resolución para maquetas de diseño, cuidadosamente seleccionados para satisfacer todas tus necesidades creativas"
             },
-            // {
-            //     id : 55,
-            //     name : "Mocky",
-            //     preview : "https://designer.mocky.io/assets/mocky-social-twitter-final.png",
-            //     url : "https://designer.mocky.io/",
-            //     description : "No espere a que el backend esté listo, genere respuestas API personalizadas con Mocky y comience a trabajar en su aplicación de inmediato."
-            // },
             {
                 id : 56,
                 name : "OnlyOffice",
@@ -1287,6 +1331,13 @@ const tools = [
                 url : "https://www.billionmail.com/",
                 description : "Una solución de código abierto para servidores de correo, boletines informativos y marketing por correo electrónico"
             },
+            {
+                id : 64,
+                name : "Opensource Alternative",
+                preview : "https://lafptocsuil8sakp.public.blob.vercel-storage.com/og-8hD3z53UHLHVtSFHRJlooI2zNiPKaN.png",
+                url : "https://opensourcealternative.to/",
+                description : "El directorio más grande del mundo de software de código abierto. Descubre más de 500 alternativas populares y gratuitas a productos de software propietario. 100% gratis."
+            }
         ],
         icon : "fa-solid fa-plus",
         update : '20/09/2024',
