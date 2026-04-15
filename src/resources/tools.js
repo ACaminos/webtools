@@ -1337,7 +1337,14 @@ const tools = [
                 preview : "https://lafptocsuil8sakp.public.blob.vercel-storage.com/og-8hD3z53UHLHVtSFHRJlooI2zNiPKaN.png",
                 url : "https://opensourcealternative.to/",
                 description : "El directorio más grande del mundo de software de código abierto. Descubre más de 500 alternativas populares y gratuitas a productos de software propietario. 100% gratis."
-            }
+            },
+	  {
+		  id: 65,
+		  name: "RevPDF",
+		  preview: "https://revpdf.com/photos/revpdf_c.svg",
+		  url: "https://revpdf.com/",
+		  description : "RevPDF es el mejor editor de PDF gratuito sin conexión. Edite texto e imágenes en archivos PDF, anote, redacte, firme, comprima, divida y convierta: 100% sin conexión, no es necesario registrarse. Disponible en Mac, Linux, Windows, Android e iOS."
+	  },
         ],
         icon : "fa-solid fa-plus",
         update : '20/09/2024',
