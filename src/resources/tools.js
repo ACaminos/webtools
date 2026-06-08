@@ -74,6 +74,13 @@ const tools = [
                 url : "https://svgl.app/",
                 description : "Una hermosa biblioteca con logotipos SVG",
             },
+            {
+                id : 11,
+                name : "Icons0",
+                preview : "https://icons0.dev/opengraph-image.png?opengraph-image.66f089c8.png",
+                url : "https://icons0.dev/",
+                description : " La búsqueda de iconos más rápida para ti y tu agente de IA",
+            },
         ],
         icon : "fa-solid fa-desktop",
         update : '20/09/2024',
