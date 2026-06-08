@@ -1,31 +1,21 @@
-// React
-import { useEffect, useState } from "react";
-
-// React Router Dom
 import { useParams } from "react-router-dom"
-
-// Component
 import { Error404 } from "./Error404";
 import { GridCards } from "../components/GridCards";
 import { Breadcrumb } from "../components/Breadcrumb";
-
-// Data
+import { AdUnit } from "../components/AdUnit";
 import tools from "../resources/tools";
 
 export const Category = () => {
     const { category } = useParams();
-    const [ page, setPage ] = useState( null )
+    const page = tools.find(p => p.category === category);
 
-    useEffect(() => {
-        const pages = tools.find( page => page.category === category );
-        setPage ( pages )
-        },[ category ]
+    if (!page) return <Error404/>
+
+    return (
+        <>
+            <Breadcrumb />
+            <GridCards {...page} />
+            <AdUnit />
+        </>
     )
-
-  return (
-    <>
-        <Breadcrumb category={ category }/>
-        { page ? ( <GridCards { ...page } /> ) :  <Error404/> }
-    </>
-  )
 }

@@ -1,3 +1,77 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 dark:bg-surface dark:text-white antialiased;
+  }
+
+  html {
+    @apply scroll-auto;
+  }
+
+  ::selection {
+    @apply bg-brand-500/20 text-brand-900 dark:text-white;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-surface-dark;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 dark:bg-brand-800/50 rounded-full hover:bg-gray-400 dark:hover:bg-brand-700/50;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-500 via-purple-500 to-brand-600;
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+  }
+
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-gray-200/80 shadow-sm;
+  }
+
+  .dark .glass {
+    @apply bg-white/5 border-white/10 shadow-none;
+  }
+
+  .glass-hover {
+    @apply hover:bg-gray-100/80 hover:border-gray-300/50 transition-all duration-300;
+  }
+
+  .dark .glass-hover {
+    @apply hover:bg-white/10 hover:border-white/20;
+  }
+
+  .glow {
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.15);
+  }
+
+  .glow-strong {
+    box-shadow: 0 0 50px rgba(139, 92, 246, 0.3);
+  }
+
+  .bg-grid {
+    background-size: 60px 60px;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  }
+
+  .dark .bg-grid {
+    background-image:
+      linear-gradient(rgba(139, 92, 246, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(139, 92, 246, 0.05) 1px, transparent 1px);
+  }
+}
