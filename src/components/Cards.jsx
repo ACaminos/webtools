@@ -1,4 +1,7 @@
+// Components
 import { HorizontalCard } from "./HorizontalCard"
+
+// Resource
 import tools from "../resources/tools"
 
 export const Cards = () => {

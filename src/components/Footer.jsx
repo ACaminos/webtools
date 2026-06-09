@@ -5,7 +5,6 @@ export const Footer = () => {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             <img alt="WebTools" src="/webtools.png" className='h-7'/>
-            <span className="text-sm text-gray-400 dark:text-gray-500">WebTools</span>
           </div>
           <div className="flex items-center gap-6 text-sm text-gray-400 dark:text-gray-500">
             <a href="/privacy-policy" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Privacidad</a>
