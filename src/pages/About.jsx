@@ -1,8 +1,18 @@
+import { Helmet } from 'react-helmet-async'
 import { Link } from "react-router-dom"
 
 export const About = () => {
   return (
-    <div className="min-h-screen pt-8 pb-16">
+    <>
+      <Helmet>
+        <title>Acerca de - WebTools | Herramientas para desarrolladores</title>
+        <meta name="description" content="WebTools es una colección curada de más de 100 herramientas gratuitas para desarrolladores frontend." />
+        <meta property="og:title" content="Acerca de WebTools" />
+        <meta property="og:description" content="Conoce WebTools, la plataforma con herramientas gratuitas para desarrolladores frontend." />
+        <meta property="og:url" content="https://webtools.vercel.app/about" />
+        <meta property="og:image" content="https://webtools.vercel.app/webtools.png" />
+      </Helmet>
+      <div className="min-h-screen pt-8 pb-16">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <div className="mb-8">
           <Link to="/" className="text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white transition-colors">
@@ -49,5 +59,6 @@ export const About = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }

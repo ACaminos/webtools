@@ -1,8 +1,16 @@
+import { Helmet } from 'react-helmet-async'
 import { Link } from "react-router-dom"
 
 export const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen pt-8 pb-16">
+    <>
+      <Helmet>
+        <title>Política de Privacidad - WebTools</title>
+        <meta name="description" content="Política de privacidad de WebTools. Información sobre cookies, Google AdSense y el uso de datos." />
+        <meta property="og:title" content="Política de Privacidad - WebTools" />
+        <meta property="og:url" content="https://webtools.vercel.app/privacy-policy" />
+      </Helmet>
+      <div className="min-h-screen pt-8 pb-16">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <div className="mb-8">
           <Link to="/" className="text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white transition-colors">
@@ -64,5 +72,6 @@ export const PrivacyPolicy = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }

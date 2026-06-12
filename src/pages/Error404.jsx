@@ -1,8 +1,15 @@
+import { Helmet } from 'react-helmet-async'
 import { Link } from "react-router-dom"
 
 export const Error404 = () => {
   return (
-    <section className="relative flex items-center min-h-[80vh] overflow-hidden">
+    <>
+      <Helmet>
+        <title>404 - Página no encontrada | WebTools</title>
+        <meta name="description" content="La página que buscas no existe o ha sido movida." />
+        <meta name="robots" content="noindex" />
+      </Helmet>
+      <section className="relative flex items-center min-h-[80vh] overflow-hidden">
       <div className="absolute inset-0 bg-grid opacity-20 dark:opacity-20" />
       <div className="absolute top-1/3 left-1/4 w-72 h-72 bg-brand-500/10 dark:bg-brand-600/10 rounded-full blur-[100px]" />
       <div className="absolute bottom-1/3 right-1/4 w-72 h-72 bg-purple-500/10 dark:bg-purple-600/10 rounded-full blur-[100px]" />
@@ -31,5 +38,6 @@ export const Error404 = () => {
         </div>
       </div>
     </section>
+    </>
   )
 }
