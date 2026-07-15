@@ -38,3 +38,38 @@ npm install
 ```bash
 npm run dev
 ```
+
+## 🛠️ Resource Management Scripts
+
+Interactive scripts to manage tools and resources in `src/resources/tools.js`:
+
+| Command | Description |
+|---------|-------------|
+| `npm run new` | Add a new resource |
+| `npm run edit` | Edit an existing resource |
+| `npm run delete` | Delete a resource |
+
+### Add new resource
+```bash
+npm run new
+```
+- Select a category or create a new one
+- Enter name, URL, description, and preview image
+- Validates duplicates by name and URL
+- Option to add multiple resources in one session
+
+### Edit resource
+```bash
+npm run edit
+```
+- Select category and resource to edit
+- Press Enter to keep the current value
+- Shows changes summary before confirming
+
+### Delete resource
+```bash
+npm run delete
+```
+- Select category and resource to delete
+- Shows resource details before confirming
+- Option to delete multiple resources in one session

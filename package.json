@@ -8,7 +8,10 @@
     "prebuild": "node scripts/generate-sitemap.mjs",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "new": "node scripts/add-tool.js",
+    "edit": "node scripts/edit-tool.js",
+    "delete": "node scripts/delete-tool.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
