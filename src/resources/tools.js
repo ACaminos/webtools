@@ -837,6 +837,13 @@ const tools = [
                 url : "https://eui.elastic.co/#/",
                 description : "The Elastic UI framework (EUI) es una biblioteca de diseño que se utiliza en Elastic para crear productos internos que deben compartir nuestra estética.",
             },
+            {
+                id : 70,
+                name : "React Bits",
+                preview : "https://reactbits.dev/og-pic.png",
+                url : "https://reactbits.dev",
+                description : "Una colección de código abierto de componentes React de alta calidad, animados, interactivos y totalmente personalizables para crear interfaces de usuario impresionantes y memorables.",
+            },
         ],
         icon : "fa-solid fa-puzzle-piece",
         update : '16/07/2026',
