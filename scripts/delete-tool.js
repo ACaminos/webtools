@@ -64,7 +64,9 @@ async function deleteTool() {
     const content = fs.readFileSync(TOOLS_PATH, 'utf-8');
     const tools = parseToolsFile(content);
 
-    console.log('\n📋 Categorías disponibles:\n');
+    console.log('\n┌─────────────────────────────────────────┐');
+console.log('│  📋 Categorías disponibles              │');
+console.log('└─────────────────────────────────────────┘\n');
     tools.forEach((cat, i) => {
         console.log(`  ${i + 1}. ${cat.category} (${cat.products.length} herramientas)`);
     });
@@ -79,7 +81,9 @@ async function deleteTool() {
 
     const targetCategory = tools[catChoice - 1];
 
-    console.log(`\n📦 Herramientas en "${targetCategory.category}":\n`);
+    console.log('\n┌─────────────────────────────────────────┐');
+    console.log(`│  📦 Herramientas en "${targetCategory.category}"`);
+    console.log('└─────────────────────────────────────────┘\n');
     targetCategory.products.forEach((prod, i) => {
         console.log(`  ${i + 1}. ${prod.name}`);
         console.log(`     URL: ${prod.url}`);
@@ -95,10 +99,13 @@ async function deleteTool() {
 
     const product = targetCategory.products[prodChoice - 1];
 
-    console.log(`\n⚠️  Vas a eliminar:`);
-    console.log(`  Nombre: ${product.name}`);
-    console.log(`  URL: ${product.url}`);
-    console.log(`  Categoría: ${targetCategory.category}`);
+    console.log('\n┌─────────────────────────────────────────┐');
+    console.log('│  ⚠️  RECURSO A ELIMINAR                  │');
+    console.log('├─────────────────────────────────────────┤');
+    console.log(`│  Nombre:     ${product.name}`);
+    console.log(`│  URL:        ${product.url}`);
+    console.log(`│  Categoría:  ${targetCategory.category}`);
+    console.log('└─────────────────────────────────────────┘');
 
     const confirm = await question('\n¿Confirmar eliminación? (s/n): ');
 
@@ -112,18 +119,25 @@ async function deleteTool() {
     targetCategory.update = formatDate();
     writeToolsFile(tools);
 
-    console.log(`\n✅ "${product.name}" eliminada`);
+    console.log('\n┌─────────────────────────────────────────┐');
+    console.log('│  ✅ RECURSO ELIMINADO EXITOSAMENTE      │');
+    console.log('└─────────────────────────────────────────┘');
+    console.log(`   Herramienta: ${product.name}`);
 
     const another = await question('\n¿Desea eliminar otro recurso? (s/n): ');
     if (another.toLowerCase() === 's') {
         await deleteTool();
     } else {
-        console.log('\n👋 ¡Listo!');
+        console.log('\n┌─────────────────────────────────────────┐');
+        console.log('│  👋 ¡Hasta luego!                       │');
+        console.log('└─────────────────────────────────────────┘');
         rl.close();
     }
 }
 
-console.log('🗑️  WebTools - Eliminar recurso\n');
+console.log('┌─────────────────────────────────────────┐');
+console.log('│  🗑️  WebTools - Eliminar recurso         │');
+console.log('└─────────────────────────────────────────┘');
 deleteTool().catch(err => {
     console.error('Error:', err.message);
     rl.close();

@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 import tools from '../resources/tools';
 
@@ -98,7 +99,19 @@ const categoryConfig = {
     icon: 'fab fa-figma',
     pattern: 'shapes',
   },
-  'others': {
+  'componentes ui': {
+    gradient: 'from-indigo-700 via-indigo-800/70 to-violet-950',
+    accent: 'from-indigo-400 to-purple-300',
+    icon: 'fa-solid fa-puzzle-piece',
+    pattern: 'squares',
+  },
+  'herramientas': {
+    gradient: 'from-amber-700 via-orange-800/70 to-yellow-950',
+    accent: 'from-amber-400 to-yellow-300',
+    icon: 'fa-solid fa-screwdriver-wrench',
+    pattern: 'sparkle',
+  },
+  'recursos varios': {
     gradient: 'from-slate-700 via-slate-800/70 to-slate-950',
     accent: 'from-slate-400 to-gray-300',
     icon: 'fa-solid fa-plus',
@@ -106,8 +119,33 @@ const categoryConfig = {
   },
 }
 
+// eslint-disable-next-line react/prop-types
 const BackgroundIllustration = ({ type }) => {
   const cls = 'absolute inset-0 pointer-events-none overflow-hidden'
+
+  const randomData = useMemo(() => {
+    const networkPoints = [[100,80],[250,150],[150,280],[400,60],[550,120],[650,250],[500,320],[350,220],[700,80],[300,350]]
+    const networkLines = networkPoints.map((point, i) => {
+      return networkPoints.slice(i + 1).filter(() => Math.random() > 0.6).map(target => ({ from: point, to: target }))
+    })
+    const chartBars = Array.from({ length: 10 }, () => ({ height: Math.random() * 180 + 30, offset: Math.random() * 180 }))
+    const blocks = Array.from({ length: 30 }, () => ({ width: 60 + Math.random() * 80, height: 12 + Math.random() * 16 }))
+    const nodes = Array.from({ length: 40 }, () => ({ r: 3 + Math.random() * 4, opacity: 0.2 + Math.random() * 0.3 }))
+    const rocketStars = Array.from({ length: 8 }, () => ({
+      x: 200 + Math.random() * 400,
+      y: 30 + Math.random() * 150,
+      r: 1.5 + Math.random() * 2,
+      opacity: 0.2 + Math.random() * 0.3,
+    }))
+    const sparkleStars = Array.from({ length: 13 }, () => ({
+      x: 40 + Math.random() * 720,
+      y: 30 + Math.random() * 340,
+      s: 6 + Math.random() * 12,
+      o1: 0.3 + Math.random() * 0.3,
+      o2: 0.15 + Math.random() * 0.2,
+    }))
+    return { networkPoints, networkLines, chartBars, blocks, nodes, rocketStars, sparkleStars }
+  }, [])
 
   switch (type) {
     case 'circles':
@@ -171,12 +209,12 @@ const BackgroundIllustration = ({ type }) => {
       return (
         <div className={cls}>
           <svg className="w-full h-full opacity-[0.07]" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
-            {[[100,80],[250,150],[150,280],[400,60],[550,120],[650,250],[500,320],[350,220],[700,80],[300,350]].map(([cx,cy],i) => (
-              [[100,80],[250,150],[150,280],[400,60],[550,120],[650,250],[500,320],[350,220],[700,80],[300,350]].slice(i+1).filter(() => Math.random() > 0.6).map(([ox,oy],j) => (
+            {randomData.networkPoints.map(([cx,cy],i) => (
+              randomData.networkLines[i].map(({to: [ox,oy]},j) => (
                 <line key={`${i}-${j}`} x1={cx} y1={cy} x2={ox} y2={oy} stroke="white" strokeWidth="0.8" opacity="0.2"/>
               ))
             ))}
-            {[[100,80],[250,150],[150,280],[400,60],[550,120],[650,250],[500,320],[350,220],[700,80],[300,350]].map(([cx,cy],i) => (
+            {randomData.networkPoints.map(([cx,cy],i) => (
               <circle key={i} cx={cx} cy={cy} r="6" fill="white" opacity="0.4"/>
             ))}
           </svg>
@@ -202,8 +240,8 @@ const BackgroundIllustration = ({ type }) => {
         <div className={cls}>
           <svg className="w-full h-full opacity-[0.07]" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
             <g transform="translate(50,300)">
-              {[0,1,2,3,4,5,6,7,8,9].map((i) => (
-                <rect key={i} x={i*75} y={-Math.random()*180-30} width="40" height={Math.random()*180+30} rx="4" fill="white" opacity={0.15 + Math.random()*0.15}/>
+              {randomData.chartBars.map((bar, i) => (
+                <rect key={i} x={i*75} y={-bar.offset - 30} width="40" height={bar.height + 30} rx="4" fill="white" opacity={0.15 + (i * 0.015)}/>
               ))}
               <line x1="-10" y1="5" x2="760" y2="5" stroke="white" strokeWidth="1" opacity="0.2"/>
             </g>
@@ -218,10 +256,10 @@ const BackgroundIllustration = ({ type }) => {
           <svg className="w-full h-full opacity-[0.07]" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
             {[0,1,2,3,4,5].map(row =>
               [0,1,2,3,4].map(col => {
-                const w = 60 + Math.random()*80
-                const h = 12 + Math.random()*16
+                const idx = row * 5 + col
+                const block = randomData.blocks[idx] || { width: 60, height: 12 }
                 return (
-                  <rect key={`${row}-${col}`} x={col*170 + 20} y={row*65 + 15} width={w} height={h} rx="4" fill="white" opacity={0.15 - row*0.02}/>
+                  <rect key={`${row}-${col}`} x={col*170 + 20} y={row*65 + 15} width={block.width} height={block.height} rx="4" fill="white" opacity={0.15 - row*0.02}/>
                 )
               })
             )}
@@ -283,8 +321,9 @@ const BackgroundIllustration = ({ type }) => {
               [0,1,2,3,4].map(j => {
                 const x = 80 + i*90 + (j%2)*20
                 const y = 60 + j*70
+                const node = randomData.nodes[i * 5 + j] || { r: 3, opacity: 0.3 }
                 return (
-                  <circle key={`${i}-${j}`} cx={x} cy={y} r={3 + Math.random()*4} fill="white" opacity={0.2 + Math.random()*0.3}/>
+                  <circle key={`${i}-${j}`} cx={x} cy={y} r={node.r} fill="white" opacity={node.opacity}/>
                 )
               })
             )}
@@ -313,8 +352,8 @@ const BackgroundIllustration = ({ type }) => {
             <path d="M360,200 L320,220 L370,210 Z" fill="none" stroke="white" strokeWidth="1.5"/>
             <path d="M440,200 L480,220 L430,210 Z" fill="none" stroke="white" strokeWidth="1.5"/>
             <path d="M400,100 L400,50" stroke="white" strokeWidth="1.5" strokeDasharray="4,6"/>
-            {[0,1,2,3,4,5,6,7].map(i => (
-              <circle key={i} cx={200 + Math.random()*400} cy={30 + Math.random()*150} r={1.5 + Math.random()*2} fill="white" opacity={0.2 + Math.random()*0.3}/>
+            {randomData.rocketStars.map((star, i) => (
+              <circle key={i} cx={star.x} cy={star.y} r={star.r} fill="white" opacity={star.opacity}/>
             ))}
           </svg>
         </div>
@@ -337,19 +376,14 @@ const BackgroundIllustration = ({ type }) => {
       return (
         <div className={cls}>
           <svg className="w-full h-full opacity-[0.07]" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
-            {[0,1,2,3,4,5,6,7,8,9,10,11,12].map(i => {
-              const x = 40 + Math.random()*720
-              const y = 30 + Math.random()*340
-              const s = 6 + Math.random()*12
-              return (
-                <g key={i} transform={`translate(${x},${y})`}>
-                  <line x1={-s} y1="0" x2={s} y2="0" stroke="white" strokeWidth="1.5" opacity={0.3 + Math.random()*0.3}/>
-                  <line x1="0" y1={-s} x2="0" y2={s} stroke="white" strokeWidth="1.5" opacity={0.3 + Math.random()*0.3}/>
-                  <line x1={-s*0.7} y1={-s*0.7} x2={s*0.7} y2={s*0.7} stroke="white" strokeWidth="0.8" opacity={0.15 + Math.random()*0.2}/>
-                  <line x1={s*0.7} y1={-s*0.7} x2={-s*0.7} y2={s*0.7} stroke="white" strokeWidth="0.8" opacity={0.15 + Math.random()*0.2}/>
-                </g>
-              )
-            })}
+            {randomData.sparkleStars.map((star, i) => (
+              <g key={i} transform={`translate(${star.x},${star.y})`}>
+                <line x1={-star.s} y1="0" x2={star.s} y2="0" stroke="white" strokeWidth="1.5" opacity={star.o1}/>
+                <line x1="0" y1={-star.s} x2="0" y2={star.s} stroke="white" strokeWidth="1.5" opacity={star.o1}/>
+                <line x1={-star.s*0.7} y1={-star.s*0.7} x2={star.s*0.7} y2={star.s*0.7} stroke="white" strokeWidth="0.8" opacity={star.o2}/>
+                <line x1={star.s*0.7} y1={-star.s*0.7} x2={-star.s*0.7} y2={star.s*0.7} stroke="white" strokeWidth="0.8" opacity={star.o2}/>
+              </g>
+            ))}
           </svg>
         </div>
       )
@@ -358,7 +392,7 @@ const BackgroundIllustration = ({ type }) => {
   }
 }
 
-const FloatingShapes = ({ accent }) => {
+const FloatingShapes = () => {
   const shapes = [
     { size: 'w-20 h-20', pos: 'top-[10%] left-[8%]', delay: '0s', duration: '7s', rotate: 'rotate-12', type: 'circle' },
     { size: 'w-16 h-16', pos: 'top-[5%] right-[12%]', delay: '1s', duration: '9s', rotate: '-rotate-12', type: 'square' },
@@ -390,21 +424,23 @@ const FloatingShapes = ({ accent }) => {
 }
 
 const Particles = () => {
+  const particles = useMemo(() => Array.from({ length: 20 }).map(() => ({
+    left: `${Math.random() * 100}%`,
+    top: `${Math.random() * 100}%`,
+    animationDuration: `${15 + Math.random() * 20}s`,
+    animationDelay: `${Math.random() * 10}s`,
+    opacity: 0.1 + Math.random() * 0.25,
+    width: `${1 + Math.random() * 2}px`,
+    height: `${1 + Math.random() * 2}px`,
+  })), [])
+
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-      {Array.from({ length: 20 }).map((_, i) => (
+      {particles.map((style, i) => (
         <div
           key={i}
           className="absolute w-1 h-1 rounded-full bg-white/20 animate-drift"
-          style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
-            animationDuration: `${15 + Math.random() * 20}s`,
-            animationDelay: `${Math.random() * 10}s`,
-            opacity: 0.1 + Math.random() * 0.25,
-            width: `${1 + Math.random() * 2}px`,
-            height: `${1 + Math.random() * 2}px`,
-          }}
+          style={style}
         />
       ))}
     </div>

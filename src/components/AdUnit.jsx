@@ -7,8 +7,9 @@ export const AdUnit = () => {
   useEffect(() => {
     if (ref.current && !pushed.current) {
       try {
-        (adsbygoogle = window.adsbygoogle || []).push({})
-      } catch {}
+        window.adsbygoogle = window.adsbygoogle || []
+        window.adsbygoogle.push({})
+      } catch (e) { void e }
       pushed.current = true
     }
   }, [])

@@ -14,60 +14,60 @@ export const PrivacyPolicy = () => {
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <div className="mb-8">
           <Link to="/" className="text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white transition-colors">
-            &larr; Back to home
+            &larr; Volver al inicio
           </Link>
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">Privacy Policy</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">Política de Privacidad</h1>
 
         <div className="prose prose-gray dark:prose-invert max-w-none space-y-6 text-gray-600 dark:text-gray-300">
-          <p>Last updated: 2024</p>
+          <p>Última actualización: 2024</p>
 
           <section>
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">1. Introduction</h2>
-            <p>At WebTools, we take your privacy very seriously. This policy describes how we collect, use, and protect your information when you use our website.</p>
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">1. Introducción</h2>
+            <p>En WebTools, tu privacidad es muy importante para nosotros. Esta política describe cómo recopilamos, usamos y protegemos tu información cuando utilizas nuestro sitio web.</p>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">2. Data we collect</h2>
-            <p>WebTools is a directory of resources and tools for developers. We do not collect personal information from our users nor require registration to access the content.</p>
-            <p className="mt-2">We may collect anonymous usage data through:</p>
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">2. Datos que recopilamos</h2>
+            <p>WebTools es un directorio de recursos y herramientas para desarrolladores. No recopilamos información personal de nuestros usuarios ni requerimos registro para acceder al contenido.</p>
+            <p className="mt-2">Podemos recopilar datos de uso anónimos a través de:</p>
             <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li>Google Analytics / Vercel Analytics (anonymous browsing data)</li>
-              <li>Google AdSense (cookies for contextual advertising)</li>
+              <li>Google Analytics / Vercel Analytics (datos de navegación anónimos)</li>
+              <li>Google AdSense (cookies para publicidad contextual)</li>
             </ul>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">3. Cookies</h2>
-            <p>We use cookies to improve your browsing experience and display relevant advertising. You can configure your browser to reject all cookies or to indicate when a cookie is being sent.</p>
-            <p className="mt-2">The cookies we use include:</p>
+            <p>Utilizamos cookies para mejorar tu experiencia de navegación y mostrar publicidad relevante. Puedes configurar tu navegador para rechazar todas las cookies o para indicar cuando se está enviando una cookie.</p>
+            <p className="mt-2">Las cookies que utilizamos incluyen:</p>
             <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li><strong>Technical cookies:</strong> necessary for the functioning of the site</li>
-              <li><strong>Personalization cookies:</strong> remember your preferences (dark/light theme)</li>
-              <li><strong>Advertising cookies:</strong> used by Google AdSense to show relevant ads</li>
+              <li><strong>Cookies técnicas:</strong> necesarias para el funcionamiento del sitio</li>
+              <li><strong>Cookies de personalización:</strong> recuerdan tus preferencias (tema oscuro/claro)</li>
+              <li><strong>Cookies publicitarias:</strong> utilizadas por Google AdSense para mostrar anuncios relevantes</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">4. Advertising with Google AdSense</h2>
-            <p>We use Google AdSense to display ads on our site. Google AdSense uses cookies to serve ads based on prior visits to this website or other sites.</p>
-            <p className="mt-2">You can learn more about Google's privacy practices at: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300">https://policies.google.com/privacy</a></p>
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">4. Publicidad con Google AdSense</h2>
+            <p>Utilizamos Google AdSense para mostrar anuncios en nuestro sitio. Google AdSense utiliza cookies para servir anuncios basados en visitas anteriores a este sitio web u otros sitios.</p>
+            <p className="mt-2">Puedes obtener más información sobre las prácticas de privacidad de Google en: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300">https://policies.google.com/privacy</a></p>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">5. Third-party links</h2>
-            <p>Our site contains links to external tools and resources. We are not responsible for the privacy practices of these websites. We recommend reading the privacy policies of each site you visit.</p>
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">5. Enlaces de terceros</h2>
+            <p>Nuestro sitio contiene enlaces a herramientas y recursos externos. No somos responsables de las prácticas de privacidad de estos sitios web. Recomendamos leer las políticas de privacidad de cada sitio que visites.</p>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">6. Changes to this policy</h2>
-            <p>We reserve the right to update this privacy policy at any time. Changes will be posted on this page with a revised update date.</p>
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">6. Cambios en esta política</h2>
+            <p>Nos reservamos el derecho de actualizar esta política de privacidad en cualquier momento. Los cambios se publicarán en esta página con una fecha de actualización revisada.</p>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">7. Contact</h2>
-            <p>If you have questions about this privacy policy, you can contact us through the <Link to="/about" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300">About</Link> page.</p>
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">7. Contacto</h2>
+            <p>Si tienes preguntas sobre esta política de privacidad, puedes contactarnos a través de la página de <Link to="/about" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300">Acerca de</Link>.</p>
           </section>
         </div>
       </div>

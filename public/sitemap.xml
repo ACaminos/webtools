@@ -86,6 +86,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://webtools.vercel.app/category/componentes%20ui</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://webtools.vercel.app/category/deployment%20%26%20hosting</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -96,7 +101,12 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webtools.vercel.app/category/others</loc>
+    <loc>https://webtools.vercel.app/category/recursos%20varios</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webtools.vercel.app/category/herramientas</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

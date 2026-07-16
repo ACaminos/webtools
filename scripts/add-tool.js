@@ -63,11 +63,11 @@ function findDuplicate(tools, name, url) {
 
     for (const cat of tools) {
         for (const prod of cat.products) {
-            if (prod.name.trim().toLowerCase() === normalizedName) {
-                return { type: 'nombre', category: cat.category, existing: prod.name };
-            }
             if (prod.url.trim().toLowerCase() === normalizedUrl) {
-                return { type: 'URL', category: cat.category, existing: prod.url };
+                return { type: 'URL', category: cat.category, name: prod.name, url: prod.url };
+            }
+            if (prod.name.trim().toLowerCase() === normalizedName) {
+                return { type: 'nombre', category: cat.category, name: prod.name, url: prod.url };
             }
         }
     }
@@ -127,8 +127,21 @@ async function addTool() {
 
     const duplicate = findDuplicate(tools, name, url);
     if (duplicate) {
-        console.log(`\n⚠️  Ya existe un recurso con esa ${duplicate.type} en la categoría "${duplicate.category}"`);
-        console.log(`   Existente: ${duplicate.existing}`);
+        console.log('\n┌─────────────────────────────────────────┐');
+        console.log('│  ⚠️  RECURSO DUPLICADO ENCONTRADO        │');
+        console.log('├─────────────────────────────────────────┤');
+        console.log(`│  Categoría: ${duplicate.category}`);
+        console.log(`│  Nombre:    ${duplicate.name}`);
+        console.log(`│  URL:       ${duplicate.url}`);
+        console.log('├─────────────────────────────────────────┤');
+        if (duplicate.type === 'URL') {
+            console.log('│  🔗 Campo duplicado: URL');
+            console.log('│  → Recomendación: Elige una URL diferente');
+        } else {
+            console.log('│  📝 Campo duplicado: Nombre');
+            console.log('│  → Recomendación: Elige un nombre diferente');
+        }
+        console.log('└─────────────────────────────────────────┘');
         const retry = await question('\n¿Intentar con otros datos? (s/n): ');
         if (retry.toLowerCase() === 's') {
             return await addTool();
@@ -150,12 +163,15 @@ async function addTool() {
         description
     };
 
-    console.log('\n--- Resumen ---\n');
-    console.log(`  Categoría: ${targetCategory.category}`);
-    console.log(`  Nombre: ${name}`);
-    console.log(`  URL: ${url}`);
-    console.log(`  Descripción: ${description}`);
-    console.log(`  Preview: ${preview}`);
+    console.log('\n┌─────────────────────────────────────────┐');
+    console.log('│  📋 RESUMEN DEL RECURSO                 │');
+    console.log('├─────────────────────────────────────────┤');
+    console.log(`│  Categoría:  ${targetCategory.category}`);
+    console.log(`│  Nombre:     ${name}`);
+    console.log(`│  URL:        ${url}`);
+    console.log(`│  Descripción: ${description}`);
+    console.log(`│  Preview:    ${preview}`);
+    console.log('└─────────────────────────────────────────┘');
 
     const confirm = await question('\n¿Confirmar? (s/n): ');
 
@@ -170,7 +186,12 @@ async function addTool() {
         const insertPoint = content.lastIndexOf(']');
         const newContent = content.slice(0, insertPoint) + newCatCode + '\n' + content.slice(insertPoint);
         fs.writeFileSync(TOOLS_PATH, newContent, 'utf-8');
-        console.log(`\n✅ Categoría "${targetCategory.category}" y herramienta "${name}" creadas`);
+        console.log('\n┌─────────────────────────────────────────┐');
+        console.log('│  ✅ RECURSO CREADO EXITOSAMENTE         │');
+        console.log('├─────────────────────────────────────────┤');
+        console.log(`│  Categoría:  ${targetCategory.category}`);
+        console.log(`│  Herramienta: ${name}`);
+        console.log('└─────────────────────────────────────────┘');
     } else {
         targetCategory.products.push(newProduct);
         targetCategory.update = formatDate();
@@ -184,19 +205,28 @@ async function addTool() {
         newContent += ']\n\nexport default tools\n';
 
         fs.writeFileSync(TOOLS_PATH, newContent, 'utf-8');
-        console.log(`\n✅ "${name}" agregada a "${targetCategory.category}"`);
+        console.log('\n┌─────────────────────────────────────────┐');
+        console.log('│  ✅ RECURSO AGREGADO EXITOSAMENTE       │');
+        console.log('├─────────────────────────────────────────┤');
+        console.log(`│  Categoría:  ${targetCategory.category}`);
+        console.log(`│  Herramienta: ${name}`);
+        console.log('└─────────────────────────────────────────┘');
     }
 
     const another = await question('\n¿Desea agregar otro recurso? (s/n): ');
     if (another.toLowerCase() === 's') {
         await addTool();
     } else {
-        console.log('\n👋 ¡Listo!');
+        console.log('\n┌─────────────────────────────────────────┐');
+        console.log('│  👋 ¡Hasta luego!                       │');
+        console.log('└─────────────────────────────────────────┘');
         rl.close();
     }
 }
 
-console.log('🔧 WebTools - Agregar nuevo recurso\n');
+console.log('┌─────────────────────────────────────────┐');
+console.log('│  🔧 WebTools - Agregar nuevo recurso     │');
+console.log('└─────────────────────────────────────────┘');
 addTool().catch(err => {
     console.error('Error:', err.message);
     rl.close();

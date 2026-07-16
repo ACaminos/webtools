@@ -12,11 +12,15 @@ const categoryGroups = [
   },
   {
     label: 'Desarrollo',
-    items: ['Apis', 'DataTables', 'Json', 'Frameworks', 'Librerias'],
+    items: ['Apis', 'DataTables', 'Json', 'Frameworks', 'Librerias', 'Componentes UI'],
   },
   {
     label: 'Utilidades',
-    items: ['GitHub', 'Skeleton', 'Divisores secciones web', 'Dashboards', 'Deployment & Hosting', "Generadores de UI\u00b4s basados en AI", 'IA', 'others'],
+    items: ['GitHub', 'Skeleton', 'Divisores secciones web', 'Dashboards', 'Deployment & Hosting', "Generadores de UI\u00b4s basados en AI", 'IA', 'Herramientas'],
+  },
+  {
+    label: 'Otros',
+    items: ['Recursos Varios'],
   },
 ]
 
@@ -87,16 +91,16 @@ export const Header = () => {
             </Popover>
 
             <Link to={"/privacy-policy"} className="text-sm font-medium leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors">
-              Privacy
+              Privacidad
             </Link>
 
             <Link to={"/about"} className="text-sm font-medium leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors">
-              About
+              Sobre mi
             </Link>
 
-            <Link to={"https://github.com/ACaminos/webtools"} className="text-sm font-medium leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors">
+            <a href="https://github.com/ACaminos/webtools" target="_blank" rel="noopener noreferrer" className="text-sm font-medium leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors">
               <i className="fa-brands fa-github fa-lg"></i>
-            </Link>
+            </a>
 
           </PopoverGroup>
         </nav>
@@ -151,15 +155,15 @@ export const Header = () => {
                   </DisclosurePanel>
                 </Disclosure>
                 <Link to={"/privacy-policy"} className="group flex w-full items-center rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-700 hover:text-brand-700 hover:bg-brand-50 dark:text-gray-200 dark:hover:text-white dark:hover:bg-brand-500/10 transition-colors">
-                  Privacy
+                  Privacidad
                 </Link>
                 <Link to={"/about"} className="group flex w-full items-center rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-700 hover:text-brand-700 hover:bg-brand-50 dark:text-gray-200 dark:hover:text-white dark:hover:bg-brand-500/10 transition-colors">
-                  About
+                  Sobre mi
                 </Link>
-                <Link to={"https://github.com/ACaminos/webtools"} className="group flex w-full items-center rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-700 hover:text-brand-700 hover:bg-brand-50 dark:text-gray-200 dark:hover:text-white dark:hover:bg-brand-500/10 transition-colors">
+                <a href="https://github.com/ACaminos/webtools" target="_blank" rel="noopener noreferrer" className="group flex w-full items-center rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-700 hover:text-brand-700 hover:bg-brand-50 dark:text-gray-200 dark:hover:text-white dark:hover:bg-brand-500/10 transition-colors">
                   <i className="fa-brands fa-github fa-lg mr-3"></i>
                   GitHub
-                </Link>
+                </a>
               </div>
             </div>
           </div>

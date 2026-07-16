@@ -7,7 +7,6 @@ export const HorizontalCard = (tools) => {
     <Link
       className="group relative rounded-2xl border border-gray-300 bg-white p-8 shadow-md shadow-gray-200/50 transition-all duration-500 hover:border-brand-400 hover:shadow-lg hover:shadow-brand-500/10 hover:-translate-y-1 overflow-hidden dark:border-white/10 dark:bg-white/[0.03] dark:shadow-none dark:hover:border-brand-500/30 dark:hover:bg-white/[0.06] dark:hover:shadow-2xl dark:hover:shadow-brand-500/10"
       to={`/category/${category}`}
-      {...tools}
     >
       <div className="absolute inset-0 bg-gradient-to-br from-brand-100/50 via-transparent to-purple-100/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 dark:from-brand-500/5 dark:via-transparent dark:to-purple-500/5" />
 
