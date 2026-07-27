@@ -851,6 +851,13 @@ const tools = [
                 url : "https://heroui.com",
                 description : "Componentes de interfaz de usuario React atractivos y accesibles, basados ​​en React Aria y Tailwind CSS v4. La alternativa moderna a MUI, Chakra UI y shadcn/ui para crear aplicaciones listas para producción.",
             },
+            {
+                id : 72,
+                name : "Amicro",
+                preview : "/notImage.png",
+                url : "https://amicro.vercel.app",
+                description : "Añade microinteracciones y componentes de transición atractivos, ligeros y optimizados para eliminar código muerto a tu sitio web de React con un solo comando de la CLI",
+            },
         ],
         icon : "fa-solid fa-puzzle-piece",
         update : '27/07/2026',
