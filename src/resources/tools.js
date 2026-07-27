@@ -844,9 +844,16 @@ const tools = [
                 url : "https://reactbits.dev",
                 description : "Una colección de código abierto de componentes React de alta calidad, animados, interactivos y totalmente personalizables para crear interfaces de usuario impresionantes y memorables.",
             },
+            {
+                id : 71,
+                name : "HeroUI",
+                preview : "https://heroui.com/images/twitter-card.jpg",
+                url : "https://heroui.com",
+                description : "Componentes de interfaz de usuario React atractivos y accesibles, basados ​​en React Aria y Tailwind CSS v4. La alternativa moderna a MUI, Chakra UI y shadcn/ui para crear aplicaciones listas para producción.",
+            },
         ],
         icon : "fa-solid fa-puzzle-piece",
-        update : '16/07/2026',
+        update : '27/07/2026',
     },
     {
         id : 15,
