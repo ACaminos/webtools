@@ -858,6 +858,13 @@ const tools = [
                 url : "https://amicro.vercel.app",
                 description : "Añade microinteracciones y componentes de transición atractivos, ligeros y optimizados para eliminar código muerto a tu sitio web de React con un solo comando de la CLI",
             },
+            {
+                id : 73,
+                name : "Border beam",
+                preview : "https://beam.jakubantalik.com/og-v2.jpg",
+                url : "https://beam.jakubantalik.com",
+                description : "Un componente ligero de React que genera un efecto de rayo brillante animado en el borde. Admite varios tamaños, variantes de color y temas.",
+            },
         ],
         icon : "fa-solid fa-puzzle-piece",
         update : '27/07/2026',
