@@ -1426,9 +1426,16 @@ const tools = [
                 url : "https://jsoncrack.com/",
                 description : "Visualice, analice y manipule datos con facilidad, una herramienta versátil y poderosa para la representación y exploración de datos.",
             },
+            {
+                id : 74,
+                name : "Pro-QR",
+                preview : "https://useproqr.com/og-image.jpg",
+                url : "https://useproqr.com",
+                description : "Crea códigos QR personalizados, descárgalos y consulta métricas básicas de escaneo desde un panel sencillo. Ideal para negocios, eventos, campañas y creadores.",
+            },
         ],
         icon : "fa-solid fa-screwdriver-wrench",
-        update : '16/07/2026',
+        update : '30/07/2026',
     },]
 
 export default tools
