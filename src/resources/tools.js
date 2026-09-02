@@ -1243,13 +1243,6 @@ const tools = [
                 description : "Una biblioteca en crecimiento de avatares gratuitos, generados por IA y de alta resolución para maquetas de diseño, cuidadosamente seleccionados para satisfacer todas tus necesidades creativas",
             },
             {
-                id : 56,
-                name : "OnlyOffice",
-                preview : "https://download.onlyoffice.com/assets/fb/fb_icon_325x325.jpg",
-                url : "https://www.onlyoffice.com/es/",
-                description : "OnlyOffice ofrece una suite ofimática en línea segura y compatible con los formatos de MS Office. Conéctalo a tu plataforma web para la edición de documentos y la colaboración o utilízalo como parte de OnlyOffice Workspace.",
-            },
-            {
                 id : 57,
                 name : "PureCode AI",
                 preview : "/notImage.png",
@@ -1333,9 +1326,16 @@ const tools = [
                 url : "https://namethatui.com",
                 description : "Mira el elemento UI, aprende su nombre real y símbolo de la API, y copia un prompt preciso para tu agente de programación.",
             },
+            {
+                id : 75,
+                name : "mapcn",
+                preview : "https://mapcn.dev/banner.png",
+                url : "https://www.mapcn.dev",
+                description : "Una colección de componentes de mapas con un diseño atractivo, accesibles y personalizables. Desarrollados con MapLibre GL. Estilo creado con Tailwind CSS. Compatible con shadcn/ui.",
+            },
         ],
         icon : "fa-solid fa-plus",
-        update : '15/07/2026',
+        update : '31/07/2026',
     },
     {
         id : 19,
@@ -1436,6 +1436,23 @@ const tools = [
         ],
         icon : "fa-solid fa-screwdriver-wrench",
         update : '30/07/2026',
-    },]
+    },    {
+        id : 20,
+        category : "OpenSource",
+        description : 'Explora nuestra categoría Open Source. Encuentra las mejores herramientas de software libre, proyectos comunitarios y recursos descargables para desarrollar sin restricciones.',
+        products : [
+            {
+                id : 1,
+                name : "OnlyOffice",
+                preview : "https://download.onlyoffice.com/assets/fb/fb_icon_325x325.jpg",
+                url : "https://www.onlyoffice.com/es/",
+                description : "OnlyOffice ofrece una suite ofimática en línea segura y compatible con los formatos de MS Office. Conéctalo a tu plataforma web para la edición de documentos y la colaboración o utilízalo como parte de OnlyOffice Workspace.",
+            },
+
+        ],
+        icon : "fas fa-users",
+        update : '02/09/2026',
+    },
+]
 
 export default tools
