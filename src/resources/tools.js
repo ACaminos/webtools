@@ -1436,7 +1436,8 @@ const tools = [
         ],
         icon : "fa-solid fa-screwdriver-wrench",
         update : '30/07/2026',
-    },    {
+    },
+    {
         id : 20,
         category : "OpenSource",
         description : 'Explora nuestra categoría Open Source. Encuentra las mejores herramientas de software libre, proyectos comunitarios y recursos descargables para desarrollar sin restricciones.',
@@ -1448,11 +1449,16 @@ const tools = [
                 url : "https://www.onlyoffice.com/es/",
                 description : "OnlyOffice ofrece una suite ofimática en línea segura y compatible con los formatos de MS Office. Conéctalo a tu plataforma web para la edición de documentos y la colaboración o utilízalo como parte de OnlyOffice Workspace.",
             },
-
+            {
+                id : 76,
+                name : "GenOffice",
+                preview : "https://genoffice.ai/assets/shots/hero-shot.png",
+                url : "https://genoffice.ai",
+                description : "Documentos, hojas de cálculo, presentaciones y PDF. Sin anuncios. Gratis para todos.",
+            },
         ],
         icon : "fas fa-users",
         update : '02/09/2026',
-    },
-]
+    },]
 
 export default tools
