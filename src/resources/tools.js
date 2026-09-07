@@ -1456,9 +1456,16 @@ const tools = [
                 url : "https://genoffice.ai",
                 description : "Documentos, hojas de cálculo, presentaciones y PDF. Sin anuncios. Gratis para todos.",
             },
+            {
+                id : 77,
+                name : "Kudu",
+                preview : "https://usekudu.com/img/screenshots/kudu-app-home.png",
+                url : "https://usekudu.com",
+                description : "Más de 15 potentes herramientas para limpiar, optimizar y proteger tus equipos Windows, macOS y Linux. Código abierto, sin anuncios ni software innecesario.",
+            },
         ],
         icon : "fas fa-users",
-        update : '02/09/2026',
+        update : '07/09/2026',
     },]
 
 export default tools
