@@ -21,7 +21,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webtools.vercel.app/category/banco%20de%20imagenes</loc>
+    <loc>https://webtools.vercel.app/category/banco-de-imagenes</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -56,7 +56,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webtools.vercel.app/category/divisores%20secciones%20web</loc>
+    <loc>https://webtools.vercel.app/category/divisores-secciones-web</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -86,27 +86,32 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webtools.vercel.app/category/componentes%20ui</loc>
+    <loc>https://webtools.vercel.app/category/componentes-ui</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webtools.vercel.app/category/deployment%20%26%20hosting</loc>
+    <loc>https://webtools.vercel.app/category/deployment-hosting</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webtools.vercel.app/category/generadores%20de%20ui%C2%B4s%20basados%20en%20ai</loc>
+    <loc>https://webtools.vercel.app/category/generadores-de-uis-basados-en-ai</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webtools.vercel.app/category/recursos%20varios</loc>
+    <loc>https://webtools.vercel.app/category/recursos-varios</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://webtools.vercel.app/category/herramientas</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webtools.vercel.app/category/opensource</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -1,7 +1,11 @@
 import { Link, useParams } from 'react-router-dom'
+import tools from '../resources/tools'
+import { getCategoryBySlug } from '../utils/slug'
 
 export const Breadcrumb = () => {
     const { category } = useParams()
+    const categoryData = getCategoryBySlug(tools, category)
+    const label = categoryData?.category ?? decodeURIComponent(category ?? '')
   return (
     <nav className="flex border-b border-gray-200 dark:border-white/5 py-3 px-5 bg-gray-50/50 dark:bg-surface/50" aria-label="Breadcrumb">
         <ol className="container mx-auto max-w-7xl inline-flex items-center space-x-2 md:space-x-3">
@@ -14,7 +18,7 @@ export const Breadcrumb = () => {
             <li>
               <div className="flex items-center">
                   <svg className="w-4 h-4 text-gray-300 dark:text-gray-600" fill="currentColor" viewBox="0 0 20 15" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path></svg>
-                  <span className="text-gray-700 dark:text-gray-300 ml-2 text-sm font-medium capitalize">{category}</span>
+                  <span className="text-gray-700 dark:text-gray-300 ml-2 text-sm font-medium capitalize">{label}</span>
               </div>
             </li>
         </ol>

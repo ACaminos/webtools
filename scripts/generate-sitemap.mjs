@@ -6,6 +6,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
 
 const tools = (await import('../src/resources/tools.js')).default
+const { slugify } = await import('../src/utils/slug.js')
 
 const SITE_URL = 'https://webtools.vercel.app'
 
@@ -16,7 +17,7 @@ const staticRoutes = [
 ]
 
 const categoryRoutes = tools.map(t => ({
-  loc: `/category/${encodeURIComponent(t.category.toLowerCase())}`,
+  loc: `/category/${slugify(t.category)}`,
   priority: '0.8',
   changefreq: 'weekly',
 }))
