@@ -1,6 +1,14 @@
 import { useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 import tools from '../resources/tools';
+import { getCategoryBySlug } from '../utils/slug';
+
+const defaultConfig = {
+  gradient: 'from-brand-700 via-brand-800/70 to-purple-950',
+  accent: 'from-brand-400 to-purple-300',
+  icon: 'fa-solid fa-layer-group',
+  pattern: 'sparkle',
+};
 
 const categoryConfig = {
   'iconos': {
@@ -9,7 +17,7 @@ const categoryConfig = {
     icon: 'fa-solid fa-desktop',
     pattern: 'circles',
   },
-  'banco de imagenes': {
+  'banco-de-imagenes': {
     gradient: 'from-blue-700 via-blue-800/70 to-sky-950',
     accent: 'from-blue-400 to-cyan-300',
     icon: 'fa-regular fa-images',
@@ -51,7 +59,7 @@ const categoryConfig = {
     icon: 'fa-solid fa-bars-progress',
     pattern: 'blocks',
   },
-  'divisores secciones web': {
+  'divisores-secciones-web': {
     gradient: 'from-pink-700 via-pink-800/70 to-pink-950',
     accent: 'from-pink-400 to-rose-300',
     icon: 'fa-solid fa-table-cells-large',
@@ -87,19 +95,19 @@ const categoryConfig = {
     icon: 'fa-solid fa-code',
     pattern: 'layers',
   },
-  'deployment & hosting': {
+  'deployment-hosting': {
     gradient: 'from-sky-700 via-sky-800/70 to-sky-950',
     accent: 'from-sky-400 to-blue-300',
     icon: 'fas fa-server',
     pattern: 'rocket',
   },
-  "generadores de ui's basados en ai": {
+  'generadores-de-uis-basados-en-ai': {
     gradient: 'from-fuchsia-700 via-fuchsia-800/70 to-fuchsia-950',
     accent: 'from-fuchsia-400 to-pink-300',
     icon: 'fab fa-figma',
     pattern: 'shapes',
   },
-  'componentes ui': {
+  'componentes-ui': {
     gradient: 'from-indigo-700 via-indigo-800/70 to-violet-950',
     accent: 'from-indigo-400 to-purple-300',
     icon: 'fa-solid fa-puzzle-piece',
@@ -111,11 +119,17 @@ const categoryConfig = {
     icon: 'fa-solid fa-screwdriver-wrench',
     pattern: 'sparkle',
   },
-  'recursos varios': {
+  'recursos-varios': {
     gradient: 'from-slate-700 via-slate-800/70 to-slate-950',
     accent: 'from-slate-400 to-gray-300',
     icon: 'fa-solid fa-plus',
     pattern: 'sparkle',
+  },
+  'opensource': {
+    gradient: 'from-emerald-700 via-emerald-800/70 to-green-950',
+    accent: 'from-emerald-400 to-green-300',
+    icon: 'fa-brands fa-osi',
+    pattern: 'nodes',
   },
 }
 
@@ -476,9 +490,8 @@ const WaveDivider = () => (
 
 export const PageHero = () => {
     const { category } = useParams()
-    const key = category?.toLowerCase()
-    const config = categoryConfig[key] || categoryConfig['others']
-    const categoryData = tools.find(t => t.category.toLowerCase() === key)
+    const categoryData = getCategoryBySlug(tools, category)
+    const config = categoryConfig[category] || defaultConfig
 
     const accentColor = config.accent.split(' ')[0]?.replace('from-', '') || 'brand'
 
@@ -503,7 +516,7 @@ export const PageHero = () => {
                     </div>
 
                     <h1 className="text-white text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold capitalize drop-shadow-xl animate-fade-in">
-                        {category}
+                        {categoryData?.category ?? category}
                     </h1>
 
                     {categoryData?.description && (

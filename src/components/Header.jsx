@@ -4,6 +4,7 @@ import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Pop
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import tools from '../resources/tools'
+import { getCategorySlug } from '../utils/slug'
 
 const categoryGroups = [
   {
@@ -20,7 +21,7 @@ const categoryGroups = [
   },
   {
     label: 'Otros',
-    items: ['Recursos Varios'],
+    items: ['Recursos Varios', 'OpenSource'],
   },
 ]
 
@@ -71,7 +72,7 @@ export const Header = () => {
                       <div className="space-y-0.5">
                         {group.tools.map((tool) => (
                           <Link
-                            to={`/category/${tool.category}`}
+                            to={`/category/${getCategorySlug(tool.category)}`}
                             key={tool.category}
                             className="group flex items-center gap-x-3 rounded-xl px-3 py-2 text-sm leading-5 hover:bg-brand-50 dark:hover:bg-brand-500/10 transition-all duration-200"
                           >
@@ -136,7 +137,7 @@ export const Header = () => {
                         <div className="space-y-0.5">
                           {group.tools.map((tool) => (
                             <Link
-                              to={`/category/${tool.category}`}
+                              to={`/category/${getCategorySlug(tool.category)}`}
                               target='_top'
                               key={tool.category}
                               className="group flex items-center gap-x-4 rounded-xl p-3 text-sm leading-6 hover:bg-brand-50 dark:hover:bg-brand-500/10 transition-all duration-200"
