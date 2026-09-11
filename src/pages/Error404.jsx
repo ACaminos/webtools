@@ -8,8 +8,10 @@ export const Error404 = () => {
         <title>404 - Página no encontrada | WebTools</title>
         <meta name="description" content="La página que buscas no existe o ha sido movida." />
         <meta name="robots" content="noindex" />
+        <meta property="og:title" content="404 - Página no encontrada | WebTools" />
+        <meta property="og:description" content="La página que buscas no existe o ha sido movida." />
       </Helmet>
-      <section className="relative flex items-center min-h-[80vh] overflow-hidden">
+      <section aria-labelledby="error-404-title" className="relative flex items-center min-h-[80vh] overflow-hidden">
       <div className="absolute inset-0 bg-grid opacity-20 dark:opacity-20" />
       <div className="absolute top-1/3 left-1/4 w-72 h-72 bg-brand-500/10 dark:bg-brand-600/10 rounded-full blur-[100px]" />
       <div className="absolute bottom-1/3 right-1/4 w-72 h-72 bg-purple-500/10 dark:bg-purple-600/10 rounded-full blur-[100px]" />
@@ -21,7 +23,7 @@ export const Error404 = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
             </svg>
           </div>
-          <h2 className="mb-4 font-extrabold text-8xl md:text-9xl text-gradient">
+          <h2 id="error-404-title" className="mb-4 font-extrabold text-8xl md:text-9xl text-gradient">
             404
           </h2>
           <p className="text-gray-900 dark:text-white text-xl md:text-2xl font-semibold">Página no encontrada</p>

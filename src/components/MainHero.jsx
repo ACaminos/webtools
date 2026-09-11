@@ -1,9 +1,9 @@
 export const MainHero = () => {
   return (
-    <section className="relative overflow-hidden pt-12 pb-16 md:pt-20">
+    <section aria-labelledby="main-hero-title" className="relative overflow-hidden pt-12 pb-16 md:pt-20">
       <div className="absolute inset-0 bg-grid opacity-40 dark:opacity-40" />
-      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-brand-500/10 dark:bg-brand-600/20 rounded-full blur-[128px] animate-float" />
-      <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-purple-500/10 dark:bg-purple-600/15 rounded-full blur-[100px] animate-float" style={{ animationDelay: '-3s' }} />
+      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-brand-500/10 dark:bg-brand-600/20 rounded-full blur-[64px] animate-float" />
+      <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-purple-500/10 dark:bg-purple-600/15 rounded-full blur-[64px] animate-float" style={{ animationDelay: '-3s' }} />
 
       <div className="relative container mx-auto flex flex-col items-center px-4 text-center md:px-10 lg:px-32 xl:max-w-4xl">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-sm text-brand-600 dark:text-brand-300 mb-8 animate-fade-in">
@@ -11,7 +11,7 @@ export const MainHero = () => {
           Tu colección de herramientas para desarrolladores
         </div>
 
-        <h1 className="text-gray-900 dark:text-white text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold leading-tight animate-slide-up">
+        <h1 id="main-hero-title" className="text-gray-900 dark:text-white text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold leading-tight animate-slide-up">
           Build Faster with&nbsp;
           <span className="text-gradient">WebTools</span>
         </h1>

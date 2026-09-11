@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useParams } from 'react-router-dom';
-import tools from '../resources/tools';
+import categories from '../resources/categories';
 import { getCategoryBySlug } from '../utils/slug';
 
 const defaultConfig = {
@@ -412,10 +412,6 @@ const FloatingShapes = () => {
     { size: 'w-16 h-16', pos: 'top-[5%] right-[12%]', delay: '1s', duration: '9s', rotate: '-rotate-12', type: 'square' },
     { size: 'w-12 h-12', pos: 'bottom-[25%] left-[5%]', delay: '2s', duration: '8s', rotate: 'rotate-45', type: 'diamond' },
     { size: 'w-14 h-14', pos: 'bottom-[35%] right-[8%]', delay: '0.5s', duration: '10s', rotate: '-rotate-6', type: 'circle' },
-    { size: 'w-10 h-10', pos: 'top-[45%] left-[15%]', delay: '3s', duration: '6s', rotate: 'rotate-[30deg]', type: 'square' },
-    { size: 'w-8 h-8', pos: 'top-[30%] right-[5%]', delay: '1.5s', duration: '11s', rotate: '', type: 'circle' },
-    { size: 'w-24 h-24', pos: 'bottom-[10%] right-[20%]', delay: '4s', duration: '12s', rotate: '-rotate-[20deg]', type: 'square' },
-    { size: 'w-6 h-6', pos: 'top-[60%] left-[3%]', delay: '2.5s', duration: '5s', rotate: '', type: 'circle' },
   ]
 
   return (
@@ -438,7 +434,7 @@ const FloatingShapes = () => {
 }
 
 const Particles = () => {
-  const particles = useMemo(() => Array.from({ length: 20 }).map(() => ({
+  const particles = useMemo(() => Array.from({ length: 8 }).map(() => ({
     left: `${Math.random() * 100}%`,
     top: `${Math.random() * 100}%`,
     animationDuration: `${15 + Math.random() * 20}s`,
@@ -490,7 +486,7 @@ const WaveDivider = () => (
 
 export const PageHero = () => {
     const { category } = useParams()
-    const categoryData = getCategoryBySlug(tools, category)
+    const categoryData = getCategoryBySlug(categories, category)
     const config = categoryConfig[category] || defaultConfig
 
     const accentColor = config.accent.split(' ')[0]?.replace('from-', '') || 'brand'

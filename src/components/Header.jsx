@@ -1,9 +1,9 @@
-import { useState, useMemo } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import tools from '../resources/tools'
+import categories from '../resources/categories'
 import { getCategorySlug } from '../utils/slug'
 
 const categoryGroups = [
@@ -27,12 +27,17 @@ const categoryGroups = [
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [dark, setDark] = useState(() => document.documentElement.classList.contains('dark'));
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', dark);
+    try { localStorage.setItem('wt-theme', dark ? 'dark' : 'light'); } catch { void 0; }
+  }, [dark]);
 
   const groupedTools = useMemo(() => {
     return categoryGroups.map((group) => ({
       ...group,
       tools: group.items
-        .map((name) => tools.find((t) => t.category === name))
+        .map((name) => categories.find((t) => t.category === name))
         .filter(Boolean),
     }))
   }, [])
@@ -42,14 +47,14 @@ export const Header = () => {
       <div className="fixed inset-x-0 top-0 glass border-b border-gray-200/80 dark:border-white/5">
         <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between py-4 px-6 xl:px-0">
           <div className="flex lg:flex-1">
-            <Link to={'/'} className="-m-1.5 p-1.5 transition-opacity hover:opacity-80">
+            <Link to={'/'} className="-m-1.5 p-1.5 transition-opacity hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded">
               <span className="sr-only">WebTools</span>
-              <img alt="WebTools" src="/webtools.png" className='h-7 pt-1'/>
+              <img alt="WebTools" src="/webtools.png" className="h-7 w-auto" fetchPriority="high"/>
             </Link>
           </div>
 
           <div className="flex lg:hidden">
-            <button type="button" onClick={() => setMobileMenuOpen(true)} className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white transition-colors">
+            <button type="button" onClick={() => setMobileMenuOpen(true)} aria-expanded={mobileMenuOpen} aria-controls="mobile-menu" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white transition-colors">
               <span className="sr-only">Abrir menú</span>
               <Bars3Icon aria-hidden="true" className="h-6 w-6" />
             </button>
@@ -77,7 +82,7 @@ export const Header = () => {
                             className="group flex items-center gap-x-3 rounded-xl px-3 py-2 text-sm leading-5 hover:bg-brand-50 dark:hover:bg-brand-500/10 transition-all duration-200"
                           >
                             <div className="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-brand-50 text-brand-600 group-hover:bg-brand-100 group-hover:text-brand-700 dark:bg-brand-500/10 dark:text-brand-400 dark:group-hover:bg-brand-500/20 dark:group-hover:text-brand-300 transition-all duration-200">
-                              <i className={`${tool.icon} text-xs`}></i>
+                              <i aria-hidden="true" className={`${tool.icon} text-xs`}></i>
                             </div>
                             <span className="font-medium text-gray-700 group-hover:text-brand-700 dark:text-gray-200 dark:group-hover:text-white transition-colors">
                               {tool.category}
@@ -99,8 +104,16 @@ export const Header = () => {
               Sobre mi
             </Link>
 
-            <a href="https://github.com/ACaminos/webtools" target="_blank" rel="noopener noreferrer" className="text-sm font-medium leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors">
-              <i className="fa-brands fa-github fa-lg"></i>
+            <Link to={"/favoritos"} aria-label="Mis favoritos" className="text-sm font-medium leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors">
+              <span aria-hidden="true">☆</span>
+            </Link>
+
+            <button type="button" onClick={() => setDark((d) => !d)} aria-pressed={dark} aria-label={dark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'} className="text-sm font-medium leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors">
+              <span aria-hidden="true">{dark ? '☀' : '☾'}</span>
+            </button>
+
+            <a href="https://github.com/ACaminos/webtools" target="_blank" rel="noopener noreferrer" aria-label="GitHub de WebTools" className="text-sm font-medium leading-6 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors">
+              <i aria-hidden="true" className="fa-brands fa-github fa-lg"></i>
             </a>
 
           </PopoverGroup>
@@ -160,6 +173,9 @@ export const Header = () => {
                 </Link>
                 <Link to={"/about"} className="group flex w-full items-center rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-700 hover:text-brand-700 hover:bg-brand-50 dark:text-gray-200 dark:hover:text-white dark:hover:bg-brand-500/10 transition-colors">
                   Sobre mi
+                </Link>
+                <Link to={"/favoritos"} className="group flex w-full items-center rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-700 hover:text-brand-700 hover:bg-brand-50 dark:text-gray-200 dark:hover:text-white dark:hover:bg-brand-500/10 transition-colors">
+                  ☆ Favoritos
                 </Link>
                 <a href="https://github.com/ACaminos/webtools" target="_blank" rel="noopener noreferrer" className="group flex w-full items-center rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-700 hover:text-brand-700 hover:bg-brand-50 dark:text-gray-200 dark:hover:text-white dark:hover:bg-brand-500/10 transition-colors">
                   <i className="fa-brands fa-github fa-lg mr-3"></i>

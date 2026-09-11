@@ -1,10 +1,10 @@
 import { Link, useParams } from 'react-router-dom'
-import tools from '../resources/tools'
+import categories from '../resources/categories'
 import { getCategoryBySlug } from '../utils/slug'
 
 export const Breadcrumb = () => {
     const { category } = useParams()
-    const categoryData = getCategoryBySlug(tools, category)
+    const categoryData = getCategoryBySlug(categories, category)
     const label = categoryData?.category ?? decodeURIComponent(category ?? '')
   return (
     <nav className="flex border-b border-gray-200 dark:border-white/5 py-3 px-5 bg-gray-50/50 dark:bg-surface/50" aria-label="Breadcrumb">

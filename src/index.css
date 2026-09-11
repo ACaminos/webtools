@@ -7,6 +7,10 @@
     @apply bg-white text-gray-900 dark:bg-surface dark:text-white antialiased;
   }
 
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-500 ring-offset-2 ring-offset-white dark:ring-offset-surface;
+  }
+
   html {
     @apply scroll-auto;
   }
@@ -61,9 +65,6 @@
 
   .bg-grid {
     background-size: 60px 60px;
-  }
-
-  .bg-grid {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
       linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);

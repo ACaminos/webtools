@@ -1119,7 +1119,7 @@ const tools = [
             {
                 id : 31,
                 name : "spectrum",
-                preview : "/notImage",
+                preview : "/notImage.png",
                 url : "https://spectrum.art/",
                 description : "Explora los tonos de color perfectos para el sitio web. Diseño actualizado según las tendencias.",
             },

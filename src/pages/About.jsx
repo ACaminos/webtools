@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import { Link } from "react-router-dom"
+import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from '../utils/seo'
 
 export const About = () => {
   return (
@@ -7,10 +8,18 @@ export const About = () => {
       <Helmet>
         <title>Acerca de - WebTools | Herramientas para desarrolladores</title>
         <meta name="description" content="WebTools es una colección curada de más de 100 herramientas gratuitas para desarrolladores frontend." />
+        <link rel="canonical" href={`${SITE_URL}/about`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="es_ES" />
+        <meta property="og:site_name" content={SITE_NAME} />
         <meta property="og:title" content="Acerca de WebTools" />
         <meta property="og:description" content="Conoce WebTools, la plataforma con herramientas gratuitas para desarrolladores frontend." />
-        <meta property="og:url" content="https://webtools.vercel.app/about" />
-        <meta property="og:image" content="https://webtools.vercel.app/webtools.png" />
+        <meta property="og:url" content={`${SITE_URL}/about`} />
+        <meta property="og:image" content={DEFAULT_OG_IMAGE} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Acerca de WebTools" />
+        <meta name="twitter:description" content="Conoce WebTools, la plataforma con herramientas gratuitas para desarrolladores frontend." />
+        <meta name="twitter:image" content={DEFAULT_OG_IMAGE} />
       </Helmet>
       <div className="min-h-screen pt-8 pb-16">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
