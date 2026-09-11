@@ -30,23 +30,26 @@ export const Pagination = ({ currentPage, totalPages, onPageChange }) => {
     };
 
     return (
-        <div className="flex justify-center items-center gap-2 my-8">
+        <nav aria-label="Paginación" className="flex justify-center items-center gap-2 my-8">
             <button
                 onClick={() => onPageChange(currentPage - 1)}
                 disabled={currentPage === 1}
-                className="px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 disabled:opacity-40 disabled:cursor-not-allowed text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-white/10"
+                aria-label="Página anterior"
+                className="px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 disabled:opacity-40 disabled:cursor-not-allowed text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
             >
                 ← Anterior
             </button>
 
             {getPageNumbers().map((page, index) => (
                 page === '...' ? (
-                    <span key={`ellipsis-${index}`} className="px-2 text-gray-400 dark:text-gray-500">...</span>
+                    <span key={`ellipsis-${index}`} aria-hidden="true" className="px-2 text-gray-400 dark:text-gray-500">...</span>
                 ) : (
                     <button
                         key={page}
                         onClick={() => onPageChange(page)}
-                        className={`w-10 h-10 rounded-lg text-sm font-medium transition-all duration-200 ${
+                        aria-label={`Ir a página ${page}`}
+                        aria-current={currentPage === page ? 'page' : undefined}
+                        className={`w-10 h-10 rounded-lg text-sm font-medium transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
                             currentPage === page
                                 ? 'bg-brand-600 text-white shadow-md shadow-brand-500/30'
                                 : 'text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-white/10'
@@ -60,11 +63,12 @@ export const Pagination = ({ currentPage, totalPages, onPageChange }) => {
             <button
                 onClick={() => onPageChange(currentPage + 1)}
                 disabled={currentPage === totalPages}
-                className="px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 disabled:opacity-40 disabled:cursor-not-allowed text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-white/10"
+                aria-label="Página siguiente"
+                className="px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 disabled:opacity-40 disabled:cursor-not-allowed text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
             >
                 Siguiente →
             </button>
-        </div>
+        </nav>
     );
 };
 

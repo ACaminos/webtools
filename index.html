@@ -3,19 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <script>
-      document.documentElement.classList.add('dark');
+      try {
+        const t = localStorage.getItem('wt-theme');
+        if (t ? t === 'dark' : true) document.documentElement.classList.add('dark');
+      } catch (e) { document.documentElement.classList.add('dark'); }
     </script>
 
     <link rel="icon" type="image/x-icon" href="/webtoolsIcon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1f1f1f" />
+    <link rel="canonical" href="https://webtools.vercel.app" />
+    <link rel="preload" as="image" href="/webtools.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <meta name="title" content="WebTools - Herramientas gratuitas para desarrolladores frontend">
     <meta name="description" content="WebTools es una plataforma con más de 100 herramientas gratuitas para desarrolladores frontend: iconos, APIs, frameworks, animaciones, generadores UI, dashboards y mucho más.">
-    <meta name="keywords" content="herramientas para desarrolladores, desarrollo frontend, bibliotecas de componentes, frameworks CSS, iconos gratis, diseño web, recursos para desarrolladores, herramientas gratuitas">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="Spanish">

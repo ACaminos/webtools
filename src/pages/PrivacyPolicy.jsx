@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import { Link } from "react-router-dom"
+import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from '../utils/seo'
 
 export const PrivacyPolicy = () => {
   return (
@@ -7,8 +8,15 @@ export const PrivacyPolicy = () => {
       <Helmet>
         <title>Política de Privacidad - WebTools</title>
         <meta name="description" content="Política de privacidad de WebTools. Información sobre cookies, Google AdSense y el uso de datos." />
+        <link rel="canonical" href={`${SITE_URL}/privacy-policy`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="es_ES" />
+        <meta property="og:site_name" content={SITE_NAME} />
         <meta property="og:title" content="Política de Privacidad - WebTools" />
-        <meta property="og:url" content="https://webtools.vercel.app/privacy-policy" />
+        <meta property="og:description" content="Política de privacidad de WebTools. Información sobre cookies, Google AdSense y el uso de datos." />
+        <meta property="og:url" content={`${SITE_URL}/privacy-policy`} />
+        <meta property="og:image" content={DEFAULT_OG_IMAGE} />
+        <meta name="twitter:card" content="summary" />
       </Helmet>
       <div className="min-h-screen pt-8 pb-16">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
