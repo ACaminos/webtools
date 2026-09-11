@@ -528,6 +528,11 @@ export const PageHero = () => {
                         <span className="w-2 h-2 bg-white/40 rounded-full" />
                         <span className="w-12 h-[2px] bg-white/20 rounded-full" />
                     </div>
+
+                    <a href="#guia" className="mt-6 inline-flex items-center gap-2 px-5 py-2 text-sm font-semibold rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60 animate-fade-in">
+                        Leer la guía
+                        <span aria-hidden="true">↓</span>
+                    </a>
                 </div>
             </div>
 

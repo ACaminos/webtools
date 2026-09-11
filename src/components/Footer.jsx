@@ -6,11 +6,16 @@ export const Footer = () => {
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <img alt="WebTools" src="/webtools.png" className='h-7'/>
+            <picture>
+              <source srcSet="/webtools-480.webp" type="image/webp" />
+              <img alt="WebTools" src="/webtools-480.png" className='h-7 w-auto' width="480" height="67" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <div className="flex items-center gap-6 text-sm text-gray-400 dark:text-gray-500">
-            <Link to="/privacy-policy" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Privacidad</Link>
             <Link to="/about" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Sobre mí</Link>
+            <Link to="/contacto" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Contacto</Link>
+            <Link to="/terminos" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Términos</Link>
+            <Link to="/privacy-policy" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Privacidad</Link>
           </div>
           <p className="text-sm text-gray-400 dark:text-gray-500">
             &copy; {new Date().getFullYear()} WebTools. Todos los derechos reservados.

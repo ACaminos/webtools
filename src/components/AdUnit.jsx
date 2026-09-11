@@ -1,5 +1,25 @@
 import { useEffect, useRef } from "react"
 
+const ADS_CLIENT = 'ca-pub-1247847789104095';
+
+const ensureAdsScript = () => new Promise((resolve) => {
+  if (window.adsbygoogle?.loaded) return resolve();
+  const existing = document.querySelector('script[data-adsbygoogle]');
+  if (existing) {
+    if (window.adsbygoogle) return resolve();
+    existing.addEventListener('load', () => resolve(), { once: true });
+    return;
+  }
+  const s = document.createElement('script');
+  s.async = true;
+  s.crossOrigin = 'anonymous';
+  s.dataset.adsbygoogle = 'true';
+  s.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADS_CLIENT}`;
+  s.addEventListener('load', () => resolve(), { once: true });
+  s.addEventListener('error', () => resolve(), { once: true });
+  document.head.appendChild(s);
+});
+
 export const AdUnit = () => {
   const ref = useRef(null)
   const pushed = useRef(false)
@@ -9,11 +29,13 @@ export const AdUnit = () => {
     if (!el) return;
     const load = () => {
       if (pushed.current) return;
-      try {
-        window.adsbygoogle = window.adsbygoogle || []
-        window.adsbygoogle.push({})
-      } catch (e) { void e }
       pushed.current = true
+      ensureAdsScript().then(() => {
+        try {
+          window.adsbygoogle = window.adsbygoogle || []
+          window.adsbygoogle.push({})
+        } catch (e) { void e }
+      });
     };
     if ('IntersectionObserver' in window) {
       const io = new IntersectionObserver((entries) => {
