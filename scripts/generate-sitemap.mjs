@@ -7,19 +7,26 @@ const root = path.resolve(__dirname, '..')
 
 const tools = (await import('../src/resources/tools.js')).default
 const { slugify } = await import('../src/utils/slug.js')
-
-const SITE_URL = 'https://webtools.vercel.app'
+const { SITE_URL } = await import('../src/utils/seo.js')
 
 const staticRoutes = [
   { loc: '', priority: '1.0', changefreq: 'weekly' },
   { loc: '/about', priority: '0.7', changefreq: 'monthly' },
+  { loc: '/contacto', priority: '0.7', changefreq: 'monthly' },
+  { loc: '/terminos', priority: '0.5', changefreq: 'monthly' },
   { loc: '/privacy-policy', priority: '0.5', changefreq: 'monthly' },
 ]
+
+const toISODate = (dmy = '') => {
+  const m = String(dmy).match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+  return m ? `${m[3]}-${m[2]}-${m[1]}` : null;
+};
 
 const categoryRoutes = tools.map(t => ({
   loc: `/category/${slugify(t.category)}`,
   priority: '0.8',
   changefreq: 'weekly',
+  lastmod: toISODate(t.update),
 }))
 
 const allRoutes = [...staticRoutes, ...categoryRoutes]
@@ -27,7 +34,7 @@ const allRoutes = [...staticRoutes, ...categoryRoutes]
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${allRoutes.map(r => `  <url>
-    <loc>${SITE_URL}${r.loc}</loc>
+    <loc>${SITE_URL}${r.loc}</loc>${r.lastmod ? `\n    <lastmod>${r.lastmod}</lastmod>` : ''}
     <changefreq>${r.changefreq}</changefreq>
     <priority>${r.priority}</priority>
   </url>`).join('\n')}

@@ -1,75 +1,53 @@
-# Webtools
+# WebTools
 
-This is a project developed with **ReactJS, Vite, React Router DOM and Font Awesome** that allows sharing different types of tools and resources for developers.
+Directorio curado de herramientas gratuitas para desarrolladores frontend, con **React 18, Vite, React Router, Tailwind CSS y Font Awesome**. Incluye buscador, favoritos, modo oscuro y páginas optimizadas para SEO.
 
-## 🚀 Technologies used
+## 🚀 Tecnologías
 
-- [ReactJS](https://react.dev/)
-- [Vite](https://vitejs.dev/)
-- [React Router DOM](https://reactrouter.com/)
-- [Font Awesome](https://fontawesome.com/)
+- [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- [React Router](https://reactrouter.com/) (rutas `/`, `/category/:slug`, `/contacto`, `/terminos`, `/favoritos`)
+- [Tailwind CSS](https://tailwindcss.com/), [Headless UI](https://headlessui.com/), [Heroicons](https://heroicons.com/)
+- [Font Awesome](https://fontawesome.com/) (subset solid/regular/brands)
+- [react-helmet-async](https://github.com/staylor/react-helmet-async) (SEO por página)
+- [Vercel Analytics](https://vercel.com/analytics) + Speed Insights
 
-## 📌 Main Features
+## 📌 Funcionalidades
 
-- Share useful tools and resources for developers.
-- Browse tool categories by use.
-- Modern and responsive design with optimized styles.
-- Smooth navigation using React Router DOM.
-- Attractive icons with Font Awesome.
+- 20 categorías con URLs limpias (`/category/banco-de-imagenes`) y redirect legacy
+- Buscador global (`?q=`) + orden (`?sort=`) + paginación (`?page=`) compartibles
+- Favoritos en `localStorage` + página `/favoritos`
+- Guías editoriales con FAQ e `ItemList` JSON-LD por categoría
+- Modo oscuro con memoria, sitemap con `lastmod`, `ads.txt`, `robots.txt`
 
-## 📂 Installation and Execution
+## 📂 Instalación y ejecución
 
-### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/ACaminos/webtools.git
-```
-
-### 2️⃣ Access the project directory:
-```bash
 cd webtools
-```
-
-### 3️⃣ Install dependencies
-```bash
 npm install
-```
-
-### 4️⃣ Run the development server
-```bash
 npm run dev
 ```
 
-## 🛠️ Resource Management Scripts
-
-Interactive scripts to manage tools and resources in `src/resources/tools.js`:
-
-| Command | Description |
+| Comando | Descripción |
 |---------|-------------|
-| `npm run new` | Add a new resource |
-| `npm run edit` | Edit an existing resource |
-| `npm run delete` | Delete a resource |
+| `npm run dev` | Servidor de desarrollo |
+| `npm run build` | Genera `sitemap.xml` (`prebuild`) y compila |
+| `npm run lint` | ESLint (incluye `scripts/` y `tests/`, `no-eval`) |
+| `npm run test` | Tests `node:test` (`slug`, `tools-lib`) |
+| `npm run preview` | Vista previa del build |
+| `npm run new` / `edit` / `delete` | Alta, edición y baja de recursos en `src/resources/tools.js` |
 
-### Add new resource
-```bash
-npm run new
-```
-- Select a category or create a new one
-- Enter name, URL, description, and preview image
-- Validates duplicates by name and URL
-- Option to add multiple resources in one session
+## 🛠️ Gestión de recursos
 
-### Edit resource
-```bash
-npm run edit
-```
-- Select category and resource to edit
-- Press Enter to keep the current value
-- Shows changes summary before confirming
+Los scripts usan `scripts/tools-lib.js`: carga segura sin `eval`, validación de URLs, detección de duplicados, backup `.bak` y escritura atómica. El esquema está en `src/resources/tools.schema.json`.
 
-### Delete resource
-```bash
-npm run delete
-```
-- Select category and resource to delete
-- Shows resource details before confirming
-- Option to delete multiple resources in one session
+- `src/resources/tools.js`: fuente de verdad (categorías + productos)
+- `src/resources/categories.js`: metadata liviana para el home y el menú
+- `src/resources/editorial.js`: intros y FAQs por categoría
+- `src/utils/slug.js` / `src/utils/seo.js`: slugs y constantes SEO (`SITE_URL`)
+
+## 💰 AdSense
+
+- `public/ads.txt` con el ID `pub-1247847789104095` (se publica en `/ads.txt`)
+- Páginas `/about`, `/contacto`, `/terminos` y `/privacy-policy` (con opt-out de anuncios)
+- Pendiente: banner de consentimiento de cookies (CMP) antes de activar anuncios en UE

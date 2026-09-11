@@ -29,7 +29,7 @@ export const PrivacyPolicy = () => {
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">Política de Privacidad</h1>
 
         <div className="prose prose-gray dark:prose-invert max-w-none space-y-6 text-gray-600 dark:text-gray-300">
-          <p>Última actualización: 2024</p>
+          <p>Última actualización: septiembre de 2026</p>
 
           <section>
             <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">1. Introducción</h2>
@@ -59,8 +59,13 @@ export const PrivacyPolicy = () => {
 
           <section>
             <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">4. Publicidad con Google AdSense</h2>
-            <p>Utilizamos Google AdSense para mostrar anuncios en nuestro sitio. Google AdSense utiliza cookies para servir anuncios basados en visitas anteriores a este sitio web u otros sitios.</p>
-            <p className="mt-2">Puedes obtener más información sobre las prácticas de privacidad de Google en: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300">https://policies.google.com/privacy</a></p>
+            <p>Utilizamos Google AdSense para mostrar anuncios en nuestro sitio. Google y terceros utilizan cookies para servir anuncios basados en visitas anteriores a este sitio web u otros sitios, y pueden leer cookies en tu navegador o usar balizas web e identificadores para recopilar información como resultado de la publicación de anuncios.</p>
+            <p className="mt-2">Puedes inhabilitar la publicidad personalizada y obtener más información en:</p>
+            <ul className="list-disc pl-6 mt-2 space-y-1">
+              <li><a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300">Configuración de anuncios de Google</a></li>
+              <li><a href="https://business.safety.google/privacy/" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300">Cómo usa Google la información de los sitios que utilizan sus servicios</a></li>
+              <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300">Política de privacidad de Google</a></li>
+            </ul>
           </section>
 
           <section>
@@ -75,7 +80,7 @@ export const PrivacyPolicy = () => {
 
           <section>
             <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3">7. Contacto</h2>
-            <p>Si tienes preguntas sobre esta política de privacidad, puedes contactarnos a través de la página de <Link to="/about" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300">Acerca de</Link>.</p>
+            <p>Si tienes preguntas sobre esta política de privacidad, puedes contactarnos a través de la página de <Link to="/contacto" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300">Contacto</Link> o <Link to="/about" className="text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300">Acerca de</Link>.</p>
           </section>
         </div>
       </div>

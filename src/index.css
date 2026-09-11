@@ -76,3 +76,30 @@
       linear-gradient(90deg, rgba(139, 92, 246, 0.05) 1px, transparent 1px);
   }
 }
+
+@media (max-width: 768px) {
+  .animate-float,
+  .animate-float-slow,
+  .animate-float-reverse,
+  .animate-drift,
+  .animate-drift-slow,
+  .animate-shimmer,
+  .animate-gradient,
+  .animate-pulse-glow {
+    animation: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-float-slow,
+  .animate-float-reverse,
+  .animate-drift,
+  .animate-drift-slow,
+  .animate-shimmer,
+  .animate-gradient,
+  .animate-pulse-glow,
+  .animate-bounce-soft {
+    animation: none !important;
+  }
+}

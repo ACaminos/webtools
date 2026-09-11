@@ -872,7 +872,7 @@ const tools = [
     {
         id : 15,
         category : "Deployment & Hosting",
-        description : 'Explora una variedad de Generadores de UI con IA para desarrollo web.',
+        description : 'Sube tu frontend a producción: plataformas para desplegar, hostear y escalar sitios estáticos y aplicaciones con SSL automático, previews por rama y deploys continuos desde Git.',
         products : [
             {
                 id : 1,
@@ -909,7 +909,7 @@ const tools = [
     {
         id : 16,
         category : "Generadores de UI´s basados en AI",
-        description : 'Explora una variedad de Generadores de UI con IA para desarrollo web.',
+        description : 'Describe lo que quieres y obtén una interfaz lista: generadores de UI con inteligencia artificial que crean componentes, landings y prototipos en minutos a partir de un prompt.',
         products : [
             {
                 id : 1,
@@ -1463,9 +1463,51 @@ const tools = [
                 url : "https://usekudu.com",
                 description : "Más de 15 potentes herramientas para limpiar, optimizar y proteger tus equipos Windows, macOS y Linux. Código abierto, sin anuncios ni software innecesario.",
             },
+            {
+                id : 78,
+                name : "TypeScript",
+                preview : "/notImage.png",
+                url : "https://www.typescriptlang.org/",
+                description : "JavaScript con tipos: detecta errores antes de ejecutar y mejora el autocompletado en proyectos frontend grandes.",
+            },
+            {
+                id : 79,
+                name : "Vite",
+                preview : "/notImage.png",
+                url : "https://vite.dev/",
+                description : "Build tool ultrarrápida para frontend moderno, con HMR instantáneo y base de este mismo sitio.",
+            },
+            {
+                id : 80,
+                name : "Node.js",
+                preview : "/notImage.png",
+                url : "https://nodejs.org/",
+                description : "JavaScript en el servidor: imprescindible para tooling, SSR y APIs que acompañan tu frontend.",
+            },
+            {
+                id : 81,
+                name : "VS Code",
+                preview : "/notImage.png",
+                url : "https://code.visualstudio.com/",
+                description : "El editor open source más usado en frontend, con miles de extensiones para React, Tailwind y más.",
+            },
+            {
+                id : 82,
+                name : "ESLint",
+                preview : "/notImage.png",
+                url : "https://eslint.org/",
+                description : "Linter configurable para mantener un código JavaScript consistente y sin errores comunes.",
+            },
+            {
+                id : 83,
+                name : "Prettier",
+                preview : "/notImage.png",
+                url : "https://prettier.io/",
+                description : "Formateador de código opinado: termina las discusiones de estilo en el equipo.",
+            },
         ],
         icon : "fas fa-users",
-        update : '07/09/2026',
+        update : '11/09/2026',
     },]
 
 export default tools

@@ -3,7 +3,12 @@ import { createRoot } from 'react-dom/client'
 import { HelmetProvider } from 'react-helmet-async'
 import App from './App.jsx'
 import './index.css'
-import '@fortawesome/fontawesome-free/css/all.min.css'
+
+if ('requestIdleCallback' in window) {
+  requestIdleCallback(() => import('./fa.js'), { timeout: 2000 });
+} else {
+  setTimeout(() => import('./fa.js'), 1000);
+}
 
 import { BrowserRouter } from "react-router-dom";
 

@@ -20,7 +20,9 @@ export const DataCard = (product) => {
             alt={name}
             width="320"
             height="192"
+            sizes="(max-width: 768px) 100vw, 320px"
             loading="lazy"
+            fetchPriority="low"
             decoding="async"
             referrerPolicy="no-referrer"
             onError={(e) => {

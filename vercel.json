@@ -8,6 +8,18 @@
   ],
   "headers": [
     {
+      "source": "/webtools-480.(webp|png)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400, immutable" }]
+    },
+    {
+      "source": "/favicon-32x32.png",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400, immutable" }]
+    },
+    {
+      "source": "/apple-touch-icon.png",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400, immutable" }]
+    },
+    {
       "source": "/webtools.png",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400, immutable" }]
     },
