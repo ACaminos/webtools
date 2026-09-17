@@ -102,9 +102,16 @@ const tools = [
                 url : "https://lordicon.com/",
                 description : "Lordicon es una poderosa biblioteca de íconos animados",
             },
+            {
+                id : 84,
+                name : "colombia-icons",
+                preview : "/notImage.png",
+                url : "https://colombia-icons.com",
+                description : "Librería de íconos line-icon inspirada en Colombia, para React, Angular y Blazor. Explorá, buscá y descargá cada ícono en SVG o PNG.",
+            },
         ],
         icon : "fa-solid fa-desktop",
-        update : '20/09/2024',
+        update : '17/09/2026',
     },
     {
         id : 2,
