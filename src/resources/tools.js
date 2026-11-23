@@ -549,6 +549,13 @@ const tools = [
                 url : "https://www.originkit.dev",
                 description : "La mayor librería gratuita de componentes animados para crear sitios web modernos. Copia código, úsalo en Framer o conéctate a través de MCP.",
             },
+            {
+                id : 8,
+                name : "Sula Designer",
+                preview : "https://sula.ink/og.jpg",
+                url : "https://sula.ink/designer",
+                description : "Editor gratuito en el navegador para crear fondos animados con WebGL. Elige uno de los 33 shaders, ajusta colores y movimiento en vivo y copia el snippet para Webflow, Framer, React, Vue, Svelte o HTML.",
+            },
         ],
         icon : "fa-solid fa-person-running",
         update : '20/09/2024',
